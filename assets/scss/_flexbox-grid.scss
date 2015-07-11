@@ -3,6 +3,7 @@ $gutter: 1.5rem;
 
 .container,
 .container-fluid {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: $gutter;
@@ -24,6 +25,11 @@ $gutter: 1.5rem;
 
 .col.reverse {
   flex-direction: column-reverse;
+}
+
+[class*=col] {
+  flex-basis: 100%;
+  max-width: 100%;
 }
 
 [class*=col-xs] {
@@ -98,9 +104,9 @@ $i: 1;
   order: 1;
 }
 
-@media only screen and (min-width: 7.68rem) {
+@media only screen and (min-width: 768px) {
   .container {
-    width: 7.5rem;
+    width: 75rem;
   }
 
   [class*=col-sm] {
@@ -176,9 +182,9 @@ $i: 1;
   }
 }
 
-@media only screen and (min-width: 9.92rem) {
+@media only screen and (min-width: 992px) {
   .container {
-    width: 9.7rem;
+    width: 97rem;
   }
 
   [class*=col-md] {
@@ -255,9 +261,9 @@ $i: 1;
   }
 }
 
-@media only screen and (min-width: 12rem) {
+@media only screen and (min-width: 1200px) {
   .container {
-    width: 11.7rem;
+    width: 117rem;
   }
 
   [class*=col-lg] {

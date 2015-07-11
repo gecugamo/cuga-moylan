@@ -326,6 +326,7 @@ html {
 
 .container,
 .container-fluid {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -360,6 +361,12 @@ html {
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse; }
+
+[class*=col] {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  max-width: 100%; }
 
 [class*=col-xs] {
   -webkit-flex: 0 0 auto;
@@ -540,9 +547,9 @@ html {
       -ms-flex-order: 1;
           order: 1; }
 
-@media only screen and (min-width: 7.68rem) {
+@media only screen and (min-width: 768px) {
   .container {
-    width: 7.5rem; }
+    width: 75rem; }
 
   [class*=col-sm] {
     -webkit-flex: 0 0 auto;
@@ -720,9 +727,9 @@ html {
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1; } }
-@media only screen and (min-width: 9.92rem) {
+@media only screen and (min-width: 992px) {
   .container {
-    width: 9.7rem; }
+    width: 97rem; }
 
   [class*=col-md] {
     -webkit-flex: 0 0 auto;
@@ -900,9 +907,9 @@ html {
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1; } }
-@media only screen and (min-width: 12rem) {
+@media only screen and (min-width: 1200px) {
   .container {
-    width: 11.7rem; }
+    width: 117rem; }
 
   [class*=col-lg] {
     -webkit-flex: 0 0 auto;
