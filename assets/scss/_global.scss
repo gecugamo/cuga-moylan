@@ -1,12 +1,71 @@
 /**
-  * global styles
-  **/
+  * @group variables
+  */
+$charcoal: #353535;
+$sharkskin: #666;
+$acid: #446669;
+
+
+$heading-font-family: 'Dosis', sans-serif;
+$heading-font-weight: 700;
+$heading-line-height: 1.25;
+
+$body-font-family: 'Open Sans', sans-serif;
+$body-font-weight: 400;
+$body-line-height: 1.6;
+
+/**
+  * @group global styles
+  */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  transition: all 250ms ease-in-out;
+  outline: 0;
 }
 
 html {
   font-size: 10px;
+}
+
+body {
+  color: $sharkskin;
+  font: {
+    family: $body-font-family;
+    size: 1.4rem;
+    weight: $body-font-weight;
+  }
+  line-height: $body-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2rem;
+  color: $charcoal;
+  font: {
+    family: $heading-font-family;
+    weight: $heading-font-weight;
+  }
+  line-height: $heading-line-height;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: $charcoal;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: lighten($charcoal, 25%);
+    outline: 0;
+    text-decoration: none;
+  }
 }

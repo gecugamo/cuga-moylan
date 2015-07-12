@@ -1,0 +1,30 @@
+[role="navigation"] {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 10px -1px rgba(#777, .5);
+  background-color: #fff;
+}
+
+.nav-inner {
+  @extend .container;
+}
+
+.nav-links {
+  list-style-type: none;
+  @extend .row;
+  @extend .center-xs;
+  @extend .middle-xs;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links > li {
+  @extend .col-xs;
+}
+
+.nav-links > li > a {
+}

@@ -1,0 +1,17 @@
+[role="header"] {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(150deg, #D6FFEF, #507A7A, #232D38);
+}
+
+.diamond {
+  flex: 0 1 auto;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #fff;
+  transform: rotate(45deg);
+}
