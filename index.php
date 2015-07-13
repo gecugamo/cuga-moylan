@@ -21,8 +21,20 @@
       </div>
     </nav>
     <header role="header">
-      <svg version="1.1" baseProfile="full" width="450" height="450" xmlns="http://www.w3.org/2000/svg">
-        <path id="diamond" d="m 225 0 l 225 225 l -225 225 l -225 -225 l 225 -225" />
+      <svg version="1.1" baseProfile="full" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+           <style type="text/css"><![CDATA[
+              #diamond {
+                fill: transparent;
+                stroke: #fff;
+                stroke-width: 1;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                transition: all 3500ms linear;
+              }
+            ]]></style>
+        </defs>
+        <path id="diamond" d="M 275 125 L 150 0 L 0 150 L 150 300 L 275 175 L 150 175 L 150 212.5 L 190 212.5 L 150 255 L 50 150 L 150 50 L 225 125 L 275 125" />
       </svg>
     </header>
     <script type="text/javascript" src="assets/js/svg-fill.js"></script>
