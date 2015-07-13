@@ -7,7 +7,7 @@
 
     <title>Gary Cuga-Moylan's Portfolio</title>
 
-    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Dosis:700|Open+Sans'>
+    <!-- <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Dosis:700|Open+Sans'> -->
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
@@ -21,8 +21,10 @@
       </div>
     </nav>
     <header role="header">
-      <div class="diamond">
-      </div>
+      <svg version="1.1" baseProfile="full" width="450" height="450" xmlns="http://www.w3.org/2000/svg">
+        <path id="diamond" d="m 225 0 l 225 225 l -225 225 l -225 -225 l 225 -225" />
+      </svg>
     </header>
+    <script type="text/javascript" src="assets/js/svg-fill.js"></script>
   </body>
 </html>

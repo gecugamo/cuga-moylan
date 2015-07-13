@@ -8,10 +8,11 @@
   background-image: linear-gradient(150deg, #D6FFEF, #507A7A, #232D38);
 }
 
-.diamond {
-  flex: 0 1 auto;
-  width: 200px;
-  height: 200px;
-  border: 4px solid #fff;
-  transform: rotate(45deg);
+#diamond {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  transition: stroke-dashoffset 1250ms linear;
 }

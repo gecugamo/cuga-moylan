@@ -330,6 +330,7 @@ html {
   font-size: 10px; }
 
 body {
+  padding-top: 50px;
   color: #666;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -1155,14 +1156,12 @@ a {
   height: 600px;
   background-image: linear-gradient(150deg, #D6FFEF, #507A7A, #232D38); }
 
-.diamond {
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  width: 200px;
-  height: 200px;
-  border: 4px solid #fff;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg); }
+#diamond {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  transition: stroke-dashoffset 1250ms linear; }
 
 /*# sourceMappingURL=style.css.map */
