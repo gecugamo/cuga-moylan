@@ -331,6 +331,7 @@ html {
 
 body {
   padding-top: 50px;
+  padding-top: 5rem;
   color: #666;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -344,12 +345,38 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 0;
   margin-bottom: 20px;
   margin-bottom: 2rem;
   color: #353535;
-  font-family: "Dosis", sans-serif;
-  font-weight: 700;
-  line-height: 1.25; }
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  line-height: 1.4;
+  text-transform: capitalize; }
+
+h1 {
+  font-size: 36px;
+  font-size: 3.6rem; }
+
+h2 {
+  font-size: 32px;
+  font-size: 3.2rem; }
+
+h3 {
+  font-size: 28px;
+  font-size: 2.8rem; }
+
+h4 {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+h5 {
+  font-size: 20px;
+  font-size: 2rem; }
+
+h6 {
+  font-size: 16px;
+  font-size: 1.6rem; }
 
 p {
   margin-bottom: 20px;
@@ -363,7 +390,19 @@ a {
     outline: 0;
     text-decoration: none; }
 
-.container, .nav-inner,
+.heading-with-background {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #353535;
+  line-height: 1;
+  font-family: "Oswald", serif;
+  font-weight: 400; }
+
+.section-heading {
+  width: 50%; }
+
+.container, .nav-inner, .about,
 .container-fluid {
   width: 100%;
   margin-right: auto;
@@ -587,7 +626,7 @@ a {
           order: 1; }
 
 @media only screen and (min-width: 768px) {
-  .container, .nav-inner {
+  .container, .nav-inner, .about {
     width: 75rem; }
 
   [class*=col-sm] {
@@ -767,7 +806,7 @@ a {
         -ms-flex-order: 1;
             order: 1; } }
 @media only screen and (min-width: 992px) {
-  .container, .nav-inner {
+  .container, .nav-inner, .about {
     width: 97rem; }
 
   [class*=col-md] {
@@ -947,7 +986,7 @@ a {
         -ms-flex-order: 1;
             order: 1; } }
 @media only screen and (min-width: 1200px) {
-  .container, .nav-inner {
+  .container, .nav-inner, .about {
     width: 117rem; }
 
   [class*=col-lg] {
@@ -1154,6 +1193,21 @@ a {
           align-items: center;
   width: 100%;
   height: 600px;
+  height: 60rem;
   background-image: linear-gradient(150deg, #D6FFEF, #507A7A, #232D38); }
+
+#g {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  transition: all 1000ms linear; }
+
+.about {
+  padding-top: 75px;
+  padding-top: 7.5rem;
+  padding-bottom: 75px;
+  padding-bottom: 7.5rem; }
 
 /*# sourceMappingURL=style.css.map */

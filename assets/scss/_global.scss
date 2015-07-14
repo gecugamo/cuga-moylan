@@ -5,13 +5,14 @@ $charcoal: #353535;
 $sharkskin: #666;
 $acid: #446669;
 
+$oswald: 'Oswald', serif;
+$raleway: 'Raleway', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
 
-$heading-font-family: 'Dosis', sans-serif;
-$heading-font-weight: 700;
-$heading-line-height: 1.25;
+$font-weight-normal: 400;
+$font-weight-light: 200;
 
-$body-font-family: 'Open Sans', sans-serif;
-$body-font-weight: 400;
+$heading-line-height: 1.4;
 $body-line-height: 1.6;
 
 /**
@@ -30,12 +31,12 @@ html {
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 5rem;
   color: $sharkskin;
   font: {
-    family: $body-font-family;
+    family: $open-sans;
     size: 1.4rem;
-    weight: $body-font-weight;
+    weight: $font-weight-normal;
   }
   line-height: $body-line-height;
 }
@@ -46,13 +47,39 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 0;
   margin-bottom: 2rem;
   color: $charcoal;
   font: {
-    family: $heading-font-family;
-    weight: $heading-font-weight;
+    family: $raleway;
+    weight: $font-weight-light;
   }
   line-height: $heading-line-height;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size:  3.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
 }
 
 p {
@@ -69,4 +96,20 @@ a {
     outline: 0;
     text-decoration: none;
   }
+}
+
+.heading-with-background {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: $charcoal;
+  line-height: 1;
+  font: {
+    family: $oswald;
+    weight: $font-weight-normal;
+  }
+}
+
+.section-heading {
+  width: 50%;
 }
