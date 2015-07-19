@@ -10,8 +10,8 @@
   function triggerAnimation() {
     path.style.strokeDashoffset = 0;
     setTimeout(function() {
-      path.style.fill = '#fff';
-    }, 1000);
+      path.style.fill = '#000';
+    }, 2500);
   }
 
   setStyles();

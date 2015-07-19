@@ -15,10 +15,9 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
-          require('postcss-normalize')(), // Add normalize css to beginning of document
           require('pixrem')(), // fallbacks for rem units
           require('autoprefixer-core')({browsers: 'last 2 versions'}), // add vendor prefixes 
-          /*require('cssnano')()*/ // minify the result 
+          require('cssnano')() // minify the result 
         ]
       },
       dist: {

@@ -1,5 +1,29 @@
+/*
+ * TABLE OF CONTENTS
+ */
+
+@import 'settings';
+/*     
+ *      1.0 Reset
+ *     1.1 Variables
+ *     1.2 Mixins
+ */
+
 @import 'global';
-@import 'flexbox-grid';
-@import 'nav';
-@import 'header';
-@import 'layout';
+/*     
+ *     2.0 Global
+ *     2.1 Grid
+ *     2.2 Navigation
+ *     2.3 Header
+ *     2.4 Footer
+ */
+
+@import 'modules';
+/*
+ *     3.0 Modules
+ */
+
+@import 'animations';
+/*     
+ *     4.0 Animations
+ */

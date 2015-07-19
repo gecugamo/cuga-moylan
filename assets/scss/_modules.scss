@@ -1,0 +1,73 @@
+/*
+ * 3.0 Modules
+ *****************************************************************************************************************************/
+/* Section */
+.section {
+    @extend .container;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $faint;
+    }
+}
+
+.section-title {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: $charcoal;
+    line-height: 1;
+    font: {
+        family: $oswald;
+        weight: $font-weight-normal;
+    }
+}
+
+.section-intro {
+    font-size: 3.2rem;
+}
+
+/* Skill */
+.skill {
+    position: relative;
+    margin-top: 3.2rem;
+    margin-bottom: 4rem;
+    border: 1px solid $faint;
+    padding-top: 4rem;
+    text-align: center;
+
+    > i {
+        position: absolute;
+        top: -2.85rem;
+        right: 0;
+        left: 0;
+        width: 5.7rem;
+        height: 5.7rem;
+        margin-right: auto;
+        margin-left: auto;
+        border: .1rem solid #ddd;
+        padding: 1rem;
+        color: lighten($blue, 15%);
+        background-color: #fff;
+        font-size: 3.5rem;
+
+        &.green {
+            color: lighten($green, 15%);
+        }
+
+        &.violet {
+            color: lighten($violet, 15%);
+        }
+    }
+}
+
+.skill-header {
+  border-bottom: .1rem solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.skill-body {
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
