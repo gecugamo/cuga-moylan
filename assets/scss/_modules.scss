@@ -5,16 +5,11 @@
 .section {
     @extend .container;
     padding-top: 8rem;
-    padding-bottom: 6rem;
-
-    &:not(:last-child) {
-        border-bottom: 1px solid $faint;
-    }
 }
 
 .section-title {
     display: inline-block;
-    padding: 5px 10px;
+    padding: .5rem 1rem;
     color: #fff;
     background-color: $charcoal;
     line-height: 1;
@@ -28,38 +23,52 @@
     font-size: 3.2rem;
 }
 
+.section-next {
+    margin-top: 6rem;
+    border-bottom: .1rem solid $faint;
+    text-align: right;
+
+    > a {
+        @include down-up();
+    }
+}
+
 /* Skill */
+
+/* <div class="skill">
+    <i class="skill-icon fa fa-html5"></i>
+    <div class="skill-header">
+        <h3>HTML</h3>
+    </div>
+    <div class="skill-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</div> */
+
 .skill {
     position: relative;
-    margin-top: 3.2rem;
-    margin-bottom: 4rem;
+    margin-top: 2.7rem;
+    margin-bottom: 2rem;
     border: 1px solid $faint;
     padding-top: 4rem;
     text-align: center;
+}
 
-    > i {
-        position: absolute;
-        top: -2.85rem;
-        right: 0;
-        left: 0;
-        width: 5.7rem;
-        height: 5.7rem;
-        margin-right: auto;
-        margin-left: auto;
-        border: .1rem solid #ddd;
-        padding: 1rem;
-        color: lighten($blue, 15%);
-        background-color: #fff;
-        font-size: 3.5rem;
-
-        &.green {
-            color: lighten($green, 15%);
-        }
-
-        &.violet {
-            color: lighten($violet, 15%);
-        }
-    }
+.skill-icon {
+    position: absolute;
+    top: -2.85rem;
+    right: 0;
+    left: 0;
+    width: 5.7rem;
+    height: 5.7rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: .1rem solid #ddd;
+    padding: 1rem;
+    color: lighten($blue, 15%);
+    background-color: #fff;
+    font-size: 3.5rem;
 }
 
 .skill-header {
@@ -68,6 +77,78 @@
 }
 
 .skill-body {
-    padding-right: 6rem;
-    padding-left: 6rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+/* Strengths */
+
+/* <ul class="strengths">
+    <li class="strength">
+        <div class="strength-level" data-width="85"></div><i class="strength-icon fa fa-html5"></i>html
+    </li>
+    <li class="strength">
+        <div class="strength-level" data-width="90"></div><i class="strength-icon fa fa-css3"></i>css
+    </li>
+    <li class="strength">
+        <div class="strength-level" data-width="70"></div><i class="strength-icon fa fa-code"></i>jquery
+    </li>
+    <li class="strength">
+        <div class="strength-level" data-width="75"></div><i class="strength-icon fa fa-wordpress"></i>wordpress
+    </li>
+    <li class="strength">
+        <div class="strength-level" data-width="80"></div><i class="strength-icon fa fa-mobile"></i>responsive
+    </li>
+</ul> */
+.strengths {
+    border-left: 1px solid $faint;
+    padding-left: 3.5rem;
+}
+
+.strength {
+    display: block;
+    position: relative;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.strength-icon {
+    margin-right: 1rem;
+}
+
+.strength-level {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: .5rem;
+    background-color: lighten($blue, 15%);
+
+    .strength:nth-child(2n) & {
+        background-color: lighten($violet, 15%);
+    }
+
+    .strength:nth-child(3n) & {
+        background-color: lighten($green, 15%);
+    }
+}
+
+/* Work */
+.work,
+.work-img {
+    display: block;
+    border: .1rem solid $faint;
+}
+
+.work {
+    display: block;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.work-img {
+    max-width: 100%;
+    height: auto;
 }

@@ -16,4 +16,10 @@
       }
     });
 
+    $('.strength-level').each(function(){
+        var $this = $(this);
+        var width = $this.data('width');
+        $this.css('width', width + '%');
+    });
+
 }(jQuery));

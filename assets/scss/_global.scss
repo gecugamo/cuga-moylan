@@ -7,6 +7,7 @@
 *::after {
   box-sizing: border-box;
   outline: 0;
+  transition: all 1s ease-in-out;
 }
 
 /* Set root font size to 10px for easy manipulation with rem units */
@@ -438,53 +439,7 @@ $i: 1;
 }
 
 /*
- * 2.2 NAVIGATION
- *****************************************************************************************************************************/
-[role="navigation"] {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  border-bottom: 1px solid #fff;
-  background-color: transparent;
-  font-family: $oswald;
-  text-align: center;
-}
-
-.nav-inner {
-  @extend .container;
-}
-
-.nav-links {
-  @extend .row;
-  list-style-type: none;
-  height: 5rem;
-  margin: 0;
-  padding: 0;
-
-  > li {
-    @extend .col-xs;
-  }
-
-  > li > a {
-    display: block;
-    color: #fff;
-    line-height: 5rem;
-  }
-
-  > li > a:hover,
-  > li > a:focus {
-    color: $charcoal;
-    background-color: #fff;
-  }
-
-  > li:not(:last-child) > a {
-    border-right: 1px solid #fff;
-  }
-}
-
-/*
- * 2.3 Header
+ * 2.2 Header
  *****************************************************************************************************************************/
 .header {
   height: 100vh;
@@ -520,15 +475,16 @@ $i: 1;
     };
   }
 
-  i {
-    animation: move-down 2.5s ease-in-out infinite;
+  > a {
+    @include down-up();
   }
 }
 
 /*
- * 2.4 Footer
+ * 2.3 Footer
  *****************************************************************************************************************************/
 .footer {
+    margin-top: 6rem;
     border-top: 1px solid $faint;
     padding-top: 8rem;
     padding-bottom: 2rem;
@@ -536,7 +492,7 @@ $i: 1;
 }
 
 /*
- * 2.5 Forms
+ * 2.4 Forms
  *****************************************************************************************************************************/
 input,
 textarea {

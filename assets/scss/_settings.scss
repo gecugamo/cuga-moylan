@@ -88,3 +88,7 @@ $grid-gutter: 1.5rem;
 /*
  * 1.1 Mixins
  *****************************************************************************************************************************/
+/* Animations */
+@mixin down-up($duration: 2.5s) {
+    animation: move-down $duration ease-in-out infinite;
+}
