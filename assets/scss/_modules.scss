@@ -124,14 +124,14 @@
     left: 0;
     width: 30%;
     height: .5rem;
-    background-color: lighten($blue, 15%);
+    background-color: $light-blue;
 
     .strength:nth-child(2n) & {
-        background-color: lighten($violet, 15%);
+        background-color: $light-violet;
     }
 
     .strength:nth-child(3n) & {
-        background-color: lighten($green, 15%);
+        background-color: $light-green;
     }
 }
 
@@ -145,7 +145,7 @@
 .work {
     display: block;
     margin-bottom: 3rem;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .work-img {

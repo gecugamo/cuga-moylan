@@ -61,6 +61,9 @@ $faint: #ddd;
 $blue: #232D38;
 $green: #2F4A4A;
 $violet: #373A57;
+$light-blue: lighten($blue, 15%);
+$light-violet: lighten($violet, 15%);
+$light-green: lighten($green, 15%);
 
 /* Fonts */
 $oswald: 'Oswald', serif;

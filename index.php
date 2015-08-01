@@ -111,7 +111,6 @@
 
             <section id="contact" class="section">
                 <h4 class="section-title">contact</h4>
-                <p class="section-intro">Lorem ipsum dolor sit amet.<br/>consectetur adipisicing elit, sed do.</p>
                 <div class="row">
                     <div class="col-md-6">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -123,6 +122,35 @@
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                     <div class="col-md-6">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input name="name" type="text" required="required" />
+                                <label for="name">
+                                    <span>Name</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input name="email" type="email" required="required" />
+                                <label for="email">
+                                    <span>Email</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input name="phone" type="text" required="required" />
+                                <label for="phone">
+                                    <span>Phone</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message"></textarea>
+                                <label for="message">
+                                    <span>Message</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <button class="button" type="submit">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div><!-- /.row -->
             </section>
@@ -130,9 +158,17 @@
 
         <footer class="footer">
             <div class="container">
-                <a href="#0"><i class="fa fa-linkedin"></i></a>
-                <a href="#0"><i class="fa fa-github"></i></a>
-                <a href="#0"><i class="fa fa-codepen"></i></a>
+                <div class="row">
+                    <div class="col-xs">
+                        <a href="#0"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <div class="col-xs">
+                        <a href="#0"><i class="fa fa-github"></i></a>
+                        </div>
+                    <div class="col-xs">
+                        <a href="#0"><i class="fa fa-codepen"></i></a>
+                    </div>
+                </div><!-- /.row -->
             </div>
         </footer>
 
