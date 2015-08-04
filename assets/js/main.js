@@ -1,47 +1,33 @@
-(function($) {
-  'use strict';
+'use strict';
 
-    // Smooth Scroll https://css-tricks.com/snippets/jquery/smooth-scrolling/
-    function smoothScroll() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-                || location.hostname == this.hostname) {
+function getDataWidth() {
+    var els = document.getElementsByClassName('strength-level');
+    var len = els.length;
+    for (var i = 0 ; i < len; i++) {
+        els[i].style.width = els[i].dataset.width + '%';
+    };
+}
 
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html,body').animate({
-                       scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
+function addFormClass() {
+    this.classList.add('filled')
+}
+
+function checkFormValue() {
+    if (this.value.length == 0) {
+        this.classList.remove('filled');
     }
+}
 
+function loopFormEls() {
+    var els = document.querySelectorAll('input, textarea');
+    var len = els.length;
+    for (var i = 0; i < len; i++) {
+        els[i].addEventListener('focus', addFormClass);
+        els[i].addEventListener('blur', checkFormValue);
+    };
+}
 
-    function getDataWidth() {
-        $('.strength-level').each(function(){
-            var $this = $(this);
-            var width = $this.data('width');
-            $this.css('width', width + '%');
-        });
-    }
-
-    function formValueCheck() {
-        $('input, textarea').on('focus', function() {
-            $(this).addClass('filled');
-        });
-
-        $('input, textarea').on('focusout', function() {
-            var $this = $(this);
-            if (!$this.val()) {
-                $this.removeClass('filled');
-            }
-        });
-    }
-    
-    smoothScroll();
+document.addEventListener('DOMContentLoaded', function() {
     getDataWidth();
-    formValueCheck();
-}(jQuery));
+    loopFormEls();
+});
