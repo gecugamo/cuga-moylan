@@ -1,0 +1,17 @@
+/* Work */
+.work,
+.work-img {
+    display: block;
+    border: .1rem solid $faint;
+}
+
+.work {
+    display: block;
+    margin-bottom: 3rem;
+    padding: .5rem;
+}
+
+.work-img {
+    max-width: 100%;
+    height: auto;
+}

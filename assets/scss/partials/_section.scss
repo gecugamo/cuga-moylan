@@ -1,0 +1,33 @@
+/*
+ * Section
+ *****************************************************************************************************************************/
+.section {
+    @extend .container;
+    padding-top: 8rem;
+}
+
+.section-title {
+    display: inline-block;
+    padding: .5rem 1rem;
+    color: #fff;
+    background-color: $charcoal;
+    line-height: 1;
+    font: {
+        family: $oswald;
+        weight: 400;
+    }
+}
+
+.section-intro {
+    font-size: 3.2rem;
+}
+
+.section-next {
+    margin-top: 6rem;
+    border-bottom: .1rem solid $faint;
+    text-align: right;
+
+    > a {
+        @include down-up();
+    }
+}

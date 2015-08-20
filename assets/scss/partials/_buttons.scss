@@ -1,0 +1,11 @@
+/*
+ * 2.5 Buttons
+ *****************************************************************************************************************************/
+.button {
+    display: inline-block;
+    border: 0;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    background-color: $light-blue;
+    text-transform: lowercase;
+}

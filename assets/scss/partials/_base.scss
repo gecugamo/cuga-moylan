@@ -1,0 +1,94 @@
+/*
+ * 2.0 Base
+ *****************************************************************************************************************************/
+/* Apply border box globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: 0;
+  transition: all 1s ease-in-out;
+}
+
+/* Set root font size to 10px for easy manipulation with rem units */
+html {
+  font-size: 62.5%;
+}
+
+body,
+p {
+  color: $body-color;
+  font: {
+    family: $body-font-family;
+    size: $body-font-size;
+    weight: $body-font-weight;
+  }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: $body-line-height;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2rem;
+  color: $heading-color;
+  font: {
+    family: $heading-font-family;
+    weight: $heading-font-weight;
+  }
+  line-height: $heading-line-height;
+  text-transform: lowercase;
+}
+
+h1 {
+  font-size:  3.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 2rem;
+}
+
+/* Links */
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: lighten($blue, 25%);
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+/* Text selection */
+::selection {
+  color: #fff;
+  background: $charcoal;
+}

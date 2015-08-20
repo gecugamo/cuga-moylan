@@ -1,29 +1,26 @@
+/*********************/
+/* TABLE OF CONTENTS */
+/*********************/
+
 /*
- * TABLE OF CONTENTS
+ * 1. Settings
  */
+@import 'settings/reset';               // 1.0 Reset
+@import 'settings/variables';           // 1.1 Variables
+@import 'settings/mixins';              // 1.2 Mixins
+@import 'settings/settings';            // 1.3 Settings
 
-@import 'settings';
-/*     
- *      1.0 Reset
- *     1.1 Variables
- *     1.2 Mixins
- */
-
-@import 'global';
-/*     
- *     2.0 Global
- *     2.1 Grid
- *     2.2 Navigation
- *     2.3 Header
- *     2.4 Footer
- */
-
-@import 'modules';
 /*
- *     3.0 Modules
+ * 2. Partials
  */
-
-@import 'animations';
-/*     
- *     4.0 Animations
- */
+@import 'partials/base';                // 2.0 Base
+@import 'partials/grid';                // 2.1 Grid
+@import 'partials/header';              // 2.3 Header
+@import 'partials/footer';              // 2.4 Footer
+@import 'partials/forms';               // 2.5 Forms
+@import 'partials/buttons';             // 2.6 Buttons
+@import 'partials/animations';          // Animations
+@import 'partials/section';             // Section
+@import 'partials/skill';               // Skill
+@import 'partials/strength';            // Strength
+@import 'partials/work';            // Work

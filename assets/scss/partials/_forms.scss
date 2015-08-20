@@ -1,0 +1,94 @@
+/*
+ * 2.4 Forms
+ *****************************************************************************************************************************/
+/* Form focus effects inspired by
+http://tympanus.net/Development/TextInputEffects/ */
+
+form {
+    margin-top: -3rem;
+}
+
+input,
+textarea,
+.form-group {
+    display: block;
+    width: 100%;
+}
+
+input,
+textarea {
+    border-width: 0 0 .1rem 0;
+    border-style: solid;
+    border-color: $faint;
+    color: $charcoal;
+    font: {
+        family: $body-font-family;
+        size: 1.4rem;
+    };
+}
+
+input {
+    height: 4rem;
+}
+
+textarea {
+    height: 12rem;
+    resize: none;
+}
+
+.form-group {
+    position: relative;
+    padding-top: 3rem;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+label > span,
+label::after {
+    transition: all ease-in-out 250ms;
+}
+
+label > span {
+    display: inline-block;
+    transform: translateY(3rem);
+}
+
+label::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: .4rem;
+    background-color: $light-blue;
+}
+
+.form-group:nth-child(2n) label::after {
+    background-color: $light-violet;
+}
+
+.form-group:nth-child(3n) label::after {
+    background-color: $light-green;
+}
+
+input.filled + label > span,
+textarea.filled + label > span {
+    transform: translateY(0);
+}
+
+input.filled + label::after,
+textarea.filled + label::after {
+    width: 100%;
+}
