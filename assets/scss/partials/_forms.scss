@@ -75,12 +75,20 @@ label::after {
     background-color: $light-blue;
 }
 
-.form-group:nth-child(2n) label::after {
+input:valid + label::after {
+    background-color: $light-blue;
+}
+
+.form-group:nth-child(2n) input:valid + label::after {
     background-color: $light-violet;
 }
 
-.form-group:nth-child(3n) label::after {
+.form-group:nth-child(3n) input:valid + label::after {
     background-color: $light-green;
+}
+
+input:invalid + label::after {
+    background-color: crimson;
 }
 
 input.filled + label > span,
@@ -92,3 +100,10 @@ input.filled + label::after,
 textarea.filled + label::after {
     width: 100%;
 }
+
+// .error + label::after,
+// .form-group:nth-child(2n) .error + label::after,
+// .form-group:nth-child(3n) .error + label::after {
+//     width: 100%;
+//     background-color: $red;
+// }

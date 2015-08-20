@@ -7,7 +7,7 @@ module.exports = function(grunt) {
           sourcemap: 'inline'
         },
         files: {
-          'style.css': 'assets/scss/style.scss'
+          'style.css': 'assets/scss/main.scss'
         }
       }
     },
@@ -16,8 +16,8 @@ module.exports = function(grunt) {
         map: true,
         processors: [
           require('pixrem')(), // fallbacks for rem units
-          require('autoprefixer-core')({browsers: 'last 2 versions'}), // add vendor prefixes 
-          require('cssnano')() // minify the result 
+          require('autoprefixer-core')({browsers: 'last 2 versions'}), // add vendor prefixes
+          require('cssnano')() // minify the result
         ]
       },
       dist: {
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         files: ['Gruntfile.js']
       },
       css: {
-        files: 'assets/scss/*.scss',
+        files: 'assets/scss/*/*.scss',
         tasks: ['sass', 'postcss']
       }
     }

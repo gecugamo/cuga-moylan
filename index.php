@@ -22,7 +22,7 @@
                     <p>Front-end web developer</p>
                     <a href="#about"><i class="fa fa-angle-double-down"></i></a>
                 </div>
-            </div>  
+            </div>
         </header>
 
         <main>
@@ -124,25 +124,25 @@
                     <div class="col-md-6">
                         <form id="contact-form">
                             <div class="form-group">
-                                <input name="name" type="text" required="required" />
+                                <input name="Name" type="text" required />
                                 <label for="name">
-                                    <span>Name</span>
+                                    <span>Name &#42;</span>
                                 </label>
                             </div>
                             <div class="form-group">
-                                <input name="email" type="email" required="required" />
+                                <input name="Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
                                 <label for="email">
-                                    <span>Email</span>
+                                    <span>Email &#42;</span>
                                 </label>
                             </div>
                             <div class="form-group">
-                                <input name="phone" type="text" required="required" />
+                                <input name="Phone" type="text" />
                                 <label for="phone">
                                     <span>Phone</span>
                                 </label>
                             </div>
                             <div class="form-group">
-                                <textarea name="message"></textarea>
+                                <textarea name="Message"></textarea>
                                 <label for="message">
                                     <span>Message</span>
                                 </label>
