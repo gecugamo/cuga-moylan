@@ -8,7 +8,6 @@
         <title>Gary Cuga-Moylan's Portfolio</title>
 
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:400|Oswald:400|Open+Sans'>
         <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -20,12 +19,277 @@
                 <div class="header-content">
                     <h1>gary cuga-moylan</h1>
                     <p>Front-end web developer</p>
-                    <a href="#about"><i class="fa fa-angle-double-down"></i></a>
+                    <a href="#work-card"><i class="icon-angle-double-down"></i></a>
                 </div>
             </div>
         </header>
 
         <main>
+            <section id="work-card" class="section">
+                <h4 class="section-title">work</h4>
+                <p class="section-intro">Lorem ipsum dolor sit amet.<br/>consectetur adipisicing elit, sed do.</p>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="work-card">
+                            <a href="#0">
+                                <img class="work-img" src="assets/img/lr_style_2.jpg">
+                            </a>
+                            <div class="work-body">
+                                <h4><a href="#0">lrstyle.com</a></h4>
+                                <table class="work-table">
+                                    <tr>
+                                        <td>
+                                            Team:
+                                        </td>
+                                        <td>
+                                            Martin Creative
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Work:
+                                        </td>
+                                        <td>
+                                            <i class="icon-html5"></i>
+                                            <i class="icon-css3"></i>
+                                            <i class="icon-jquery"></i>
+                                            <i class="icon-wordpress"></i>
+                                            <i class="icon-mobile"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="work-card">
+                            <a href="#0">
+                                <img class="work-img" src="assets/img/mmequip_2.jpg">
+                            </a>
+                            <div class="work-body">
+                                <h4><a href="#0">mmequip.com</a></h4>
+                                <table class="work-table">
+                                    <tr>
+                                        <td>
+                                            Team:
+                                        </td>
+                                        <td>
+                                            Martin Creative
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Work:
+                                        </td>
+                                        <td>
+                                            <i class="icon-html5"></i>
+                                            <i class="icon-css3"></i>
+                                            <i class="icon-jquery"></i>
+                                            <i class="icon-wordpress"></i>
+                                            <i class="icon-mobile"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="work-card">
+                            <a href="#0">
+                                <img class="work-img" src="assets/img/custom_ledgers_2.jpg">
+                            </a>
+                            <div class="work-body">
+                                <h4><a href="#0">customledgers.com</a></h4>
+                                <table class="work-table">
+                                    <tr>
+                                        <td>
+                                            Team:
+                                        </td>
+                                        <td>
+                                            Freelance
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Work:
+                                        </td>
+                                        <td>
+                                            <i class="icon-html5"></i>
+                                            <i class="icon-css3"></i>
+                                            <i class="icon-jquery"></i>
+                                            <i class="icon-wordpress"></i>
+                                            <i class="icon-mobile"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="work-card">
+                            <a href="#0">
+                                <img class="work-img" src="assets/img/youth_specialties_2.jpg">
+                            </a>
+                            <div class="work-body">
+                                <h4><a href="#0">youthspecialties.com</a></h4>
+                                <table class="work-table">
+                                    <tr>
+                                        <td>
+                                            Team:
+                                        </td>
+                                        <td>
+                                            Martin Creative
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Work:
+                                        </td>
+                                        <td>
+                                            <i class="icon-html5"></i>
+                                            <i class="icon-css3"></i>
+                                            <i class="icon-jquery"></i>
+                                            <i class="icon-wordpress"></i>
+                                            <i class="icon-mobile"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="work-card">
+                            <a href="#0">
+                                <img class="work-img" src="assets/img/covered_affairs_2.jpg">
+                            </a>
+                            <div class="work-body">
+                                <h4><a href="#0">coveredaffairs.com</a></h4>
+                                <table class="work-table">
+                                    <tr>
+                                        <td>
+                                            Team:
+                                        </td>
+                                        <td>
+                                            Martin Creative
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Work:
+                                        </td>
+                                        <td>
+                                            <i class="icon-html5"></i>
+                                            <i class="icon-css3"></i>
+                                            <i class="icon-jquery"></i>
+                                            <i class="icon-wordpress"></i>
+                                            <i class="icon-mobile"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="work-card">
+                            <a href="#0">
+                                <img class="work-img" src="assets/img/acm_web_2.jpg">
+                            </a>
+                            <div class="work-body">
+                                <h4><a href="#0">acmweb.com</a></h4>
+                                <table class="work-table">
+                                    <tr>
+                                        <td>
+                                            Team:
+                                        </td>
+                                        <td>
+                                            Martin Creative
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Work:
+                                        </td>
+                                        <td>
+                                            <i class="icon-html5"></i>
+                                            <i class="icon-css3"></i>
+                                            <i class="icon-jquery"></i>
+                                            <i class="icon-wordpress"></i>
+                                            <i class="icon-mobile"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="work-card">
+                            <a href="#0">
+                                <img class="work-img" src="assets/img/dna_2.jpg">
+                            </a>
+                            <div class="work-body">
+                                <h4><a href="#0">go4dna.com</a></h4>
+                                <table class="work-table">
+                                    <tr>
+                                        <td>
+                                            Team:
+                                        </td>
+                                        <td>
+                                            Martin Creative
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Work:
+                                        </td>
+                                        <td>
+                                            <i class="icon-html5"></i>
+                                            <i class="icon-css3"></i>
+                                            <i class="icon-jquery"></i>
+                                            <i class="icon-wordpress"></i>
+                                            <i class="icon-mobile"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="work-card">
+                            <a href="#0">
+                                <img class="work-img" src="assets/img/wedding_2.jpg">
+                            </a>
+                            <div class="work-body">
+                                <h4><a href="#0">cuga-moylan.com</a></h4>
+                                <table class="work-table">
+                                    <tr>
+                                        <td>
+                                            Team:
+                                        </td>
+                                        <td>
+                                            Personal
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Work:
+                                        </td>
+                                        <td>
+                                            <i class="icon-html5"></i>
+                                            <i class="icon-css3"></i>
+                                            <i class="icon-jquery"></i>
+                                            <i class="icon-mobile"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+                <div class="section-next">
+                    <a href="#contact"><i class="icon-angle-double-down"></i></a>
+                </div>
+            </section>
+
             <section id="about" class="section">
                 <h4 class="section-title">about</h4>
                 <p class="section-intro">A keen eye for detail.<br/>A unquenchable thirst for knowledge.</p>
@@ -34,115 +298,62 @@
                         <p>A couple years ago, I took it upon myself to learn the languages of the web. Now, I'm a Front-End Web Developer working in the Chicago suburbs.</p>
                         <p>I have particular passions for CSS, jQuery, and WordPress. In the ever evolving field of Web Development, I am constantly looking for ways to challenge myself and learn new skills.</p>
                     </div>
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                         <ul class="strengths">
                             <li class="strength">
-                                <div class="strength-level" data-width="85"></div><i class="strength-icon fa fa-html5"></i>html
+                                <div class="strength-level" data-width="85"></div><i class="strength-icon icon-html5"></i>html
                             </li>
                             <li class="strength">
-                                <div class="strength-level" data-width="90"></div><i class="strength-icon fa fa-css3"></i>css
+                                <div class="strength-level" data-width="90"></div><i class="strength-icon icon-css3"></i>css
                             </li>
                             <li class="strength">
-                                <div class="strength-level" data-width="70"></div><i class="strength-icon fa fa-code"></i>jquery
+                                <div class="strength-level" data-width="70"></div><i class="strength-icon icon-jquery"></i>jquery
                             </li>
                             <li class="strength">
-                                <div class="strength-level" data-width="75"></div><i class="strength-icon fa fa-wordpress"></i>wordpress
+                                <div class="strength-level" data-width="75"></div><i class="strength-icon icon-wordpress"></i>wordpress
                             </li>
                             <li class="strength">
-                                <div class="strength-level" data-width="80"></div><i class="strength-icon fa fa-mobile"></i>responsive
+                                <div class="strength-level" data-width="80"></div><i class="strength-icon icon-mobile"></i>responsive
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div><!-- /.row -->
                 <div class="section-next">
-                    <a href="#skills"><i class="fa fa-angle-double-down"></i></a>
+                    <a href="#skills"><i class="icon-angle-double-down"></i></a>
                 </div>
             </section>
 
-            <section id="skills" class="section">
-                <h4 class="section-title">work</h4>
-                <p class="section-intro">Lorem ipsum dolor sit amet.<br/>consectetur adipisicing elit, sed do.</p>
-                <div class="row">
-                    <div class="col-md-3">
-                        <a class="work" href="#0">
-                            <img class="work-img" src="assets/img/lr_style.jpg">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="work" href="#0">
-                            <img class="work-img" src="assets/img/mmequip.jpg">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="work" href="#0">
-                            <img class="work-img" src="assets/img/custom_ledgers.jpg">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="work" href="#0">
-                            <img class="work-img" src="assets/img/youth_specialties.jpg">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="work" href="#0">
-                            <img class="work-img" src="assets/img/covered_affairs.jpg">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="work" href="#0">
-                            <img class="work-img" src="assets/img/acm_web.jpg">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="work" href="#0">
-                            <img class="work-img" src="assets/img/dna.jpg">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a class="work" href="#0">
-                            <img class="work-img" src="assets/img/wedding.jpg">
-                        </a>
-                    </div>
-                </div><!-- /.row -->
-                <div class="section-next">
-                    <a href="#contact"><i class="fa fa-angle-double-down"></i></a>
-                </div>
-            </section>
 
             <section id="contact" class="section">
                 <h4 class="section-title">contact</h4>
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="contact-card">
+
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <form id="contact-form">
+                        <form name="contact">
                             <div class="form-group">
-                                <input name="Name" type="text" required />
+                                <input class="required" name="name" type="text" />
                                 <label for="name">
                                     <span>Name &#42;</span>
                                 </label>
                             </div>
                             <div class="form-group">
-                                <input name="Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                                <input class="required" name="email" type="email" />
                                 <label for="email">
                                     <span>Email &#42;</span>
                                 </label>
                             </div>
                             <div class="form-group">
-                                <input name="Phone" type="text" />
+                                <input name="phone" type="text" />
                                 <label for="phone">
                                     <span>Phone</span>
                                 </label>
                             </div>
                             <div class="form-group">
-                                <textarea name="Message"></textarea>
+                                <textarea name="message"></textarea>
                                 <label for="message">
                                     <span>Message</span>
                                 </label>
@@ -160,13 +371,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs">
-                        <a href="#0"><i class="fa fa-linkedin"></i></a>
+                        <a href="#0"><i class="icon-linkedin-squared"></i></a>
                     </div>
                     <div class="col-xs">
-                        <a href="#0"><i class="fa fa-github"></i></a>
+                        <a href="#0"><i class="icon-github-squared"></i></a>
                         </div>
                     <div class="col-xs">
-                        <a href="#0"><i class="fa fa-codepen"></i></a>
+                        <a href="#0"><i class="icon-codeopen"></i></a>
                     </div>
                 </div><!-- /.row -->
             </div>

@@ -27,18 +27,36 @@ function loopFormEls() {
     };
 }
 
-// var form = document.getElementById('contact-form');
-// form.noValidate = true;
-// form.addEventListener('submit', function(e) {
-//     var els = form.elements;
-//     var len = els.length;
-//     for (var i = 0; i < len; i++) {
-//         if (!els[i].value && els[i].required) {
-//             els[i].classList.add('error');
-//             e.preventDefault();
-//         }
-//     }
-// });
+(function() {
+    var form, elements, requiredElements, emailInput, pattern, len;              // Declare variables
+    form = document.forms.contact;
+    requiredElements = document.getElementsByClassName('required');
+    emailInput = form.elements.email;
+    pattern = /[^@]+@[^@]+/;
+    len = form.elements.length;
+
+    form.noValidate = true;                                             // Turn off HTML5 validation
+
+    form.addEventListener('submit', checkFormValue);
+
+    function checkFormValue(e) {
+        for (var i = 0; i < len; i++) {                                 // Check required inputs for a value
+            if (!requiredElements[i].value) {
+                e.preventDefault();
+                requiredElements[i].classList.add('error');
+            } else {
+                requiredElements[i].classList.remove('error');
+            }
+        }
+        if (!pattern.test(emailInput.value)) {
+            e.preventDefault();
+            emailInput.classList.add('error');                           // Check email pattern
+        } else {
+            emailInput.classList.remove('error');
+        }
+
+    }
+}());
 
 document.addEventListener('DOMContentLoaded', function() {
     getDataWidth();
