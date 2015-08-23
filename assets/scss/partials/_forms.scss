@@ -39,11 +39,11 @@ textarea {
 
 .form-group {
     position: relative;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .form-group:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 label {
@@ -83,6 +83,10 @@ label::after {
 }
 
 .form-group:nth-child(3n) label::after {
+    background-color: $light-tan;
+}
+
+.form-group:nth-child(4n) label::after {
     background-color: $light-green;
 }
 

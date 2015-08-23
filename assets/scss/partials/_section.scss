@@ -6,28 +6,26 @@
     padding-top: 8rem;
 }
 
-.section-title {
-    display: inline-block;
-    padding: .5rem 1rem;
-    color: #fff;
-    background-color: $charcoal;
-    line-height: 1;
-    font: {
-        family: $oswald;
-        weight: 400;
+.section-divider {
+    @media #{$screen-md-min} {
+        border-right: 1px solid $faint;
+        padding-right: 3rem;
     }
 }
 
-.section-intro {
-    font-size: 3.2rem;
+.section-divider-pt-2 {
+    @media #{$screen-md-min} {
+        padding-left: 4rem;
+    }
 }
 
 .section-next {
-    margin-top: 6rem;
+    margin-top: 4rem;
     border-bottom: .1rem solid $faint;
     text-align: right;
 
     > a {
         @include down-up();
+        font-size: 2rem;
     }
 }

@@ -4,8 +4,19 @@
 .button {
     display: inline-block;
     border: 0;
-    padding: 1.5rem 3rem;
+    padding: 1rem 2rem;
     color: #fff;
     background-color: $light-blue;
+    font: {
+        family: $heading-font-family;
+        size: 1.6rem;
+    };
     text-transform: lowercase;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: $blue;
+        cursor: pointer;
+    }
 }

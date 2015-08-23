@@ -1,0 +1,42 @@
+/*
+ * Work Card
+ *****************************************************************************************************************************/
+.work-card,
+.work-img,
+.work-body {
+    display: block;
+}
+
+.work-card {
+    max-width: 30rem;
+    margin: 0 auto 3rem;
+    border: .1rem solid $faint;
+    color: $body-color;
+
+    &:hover,
+    &:focus {
+        transform: translateY(-.5rem);
+        border-color: $mist;
+        color: $body-color;
+        text-decoration: none;
+    }
+}
+
+.work-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.work-body {
+    border-top: .1rem solid $faint;
+    padding: 2rem;
+}
+
+.work-table {
+    font-size: 1.6rem;
+
+    td:first-child {
+        padding-right: 1rem;
+        font-weight: 700;
+    }
+}

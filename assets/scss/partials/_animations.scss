@@ -2,19 +2,21 @@
  * 4.0 Animations
  *****************************************************************************************************************************/
 @keyframes bg-color-change {
-  0%, 100% {
-    background-color: rgba($blue, .95);
-  } 25% {
-    background-color: rgba($violet, .95);
-  } 75% {
-    background-color: rgba($green, .95);
-  }
+    0%, 100% {
+        background-color: rgba($blue, .95);
+    } 25% {
+        background-color: rgba($violet, .95);
+    } 50% {
+        background-color: rgba($tan, .95);
+    } 75% {
+        background-color: rgba($green, .95);
+    }
 }
 
 @keyframes move-down {
-  0%, 100% {
-    transform: translateY(0);
-  } 50% {
-    transform: translateY(.5rem);
-  }
+    0%, 100% {
+        transform: translateY(0);
+    } 50% {
+        transform: translateY(.5rem);
+    }
 }

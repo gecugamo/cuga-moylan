@@ -1,0 +1,20 @@
+/*
+ * Typography
+ *****************************************************************************************************************************/
+ .section-title {
+     display: inline-block;
+     margin-bottom: 6rem;
+     padding: .5rem 1rem;
+     color: #fff;
+     background-color: $blue;
+     line-height: 1;
+     font: {
+         family: $oswald;
+         weight: 400;
+     }
+ }
+
+ .section-intro {
+     margin-bottom: 4rem;
+     font-size: 3.2rem;
+ }

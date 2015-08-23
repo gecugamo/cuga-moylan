@@ -7,14 +7,22 @@ $charcoal: #353535;
 $sharkskin: #666;
 $acid: #446669;
 $faint: #ddd;
+$mist: #bbb;
 $blue: #232D38;
-$green: #2F4A4A;
 $violet: #373A57;
+$tan: #86755A;
+$green: #2F4A4A;
 $red: #DC143C;
 $light-blue: lighten($blue, 25%);
 $light-violet: lighten($violet, 25%);
+$light-tan: lighten($tan, 25%);
 $light-green: lighten($green, 25%);
 
 /* Fonts */
 $oswald: 'Oswald', serif;
 $raleway: 'Raleway', sans-serif;
+
+/* Breakpoints */
+$screen-sm-min: 'only screen and (min-width: 768px)';
+$screen-md-min: 'only screen and (min-width: 992px)';
+$screen-lg-min: 'only screen and (min-width: 1200px)';

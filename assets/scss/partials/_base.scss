@@ -76,14 +76,14 @@ p {
 
 /* Links */
 a {
-  color: $blue;
+  color: $light-blue;
   text-decoration: none;
 
   &:hover,
   &:focus {
     color: lighten($blue, 25%);
     outline: 0;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 

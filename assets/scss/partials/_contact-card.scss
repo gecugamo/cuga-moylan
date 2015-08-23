@@ -1,0 +1,52 @@
+/*
+ * Contact Card
+ *****************************************************************************************************************************/
+.contact-card,
+.contact-img {
+    border: 1px solid $faint;
+ }
+
+.contact-card {
+    width: 36rem;
+    position: relative;
+    margin-top: 7.5rem;
+    text-align: center;
+}
+
+.contact-img {
+    position: absolute;
+    top: -7.5rem;
+    right: 0;
+    left: 0;
+    width: 15rem;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    padding: .4rem;
+    background-color: #fff;
+}
+
+.contact-body {
+    padding: 10.5rem 2rem 4rem;
+}
+
+.contact-links {
+    list-style-type: none;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: $blue;
+
+    > li {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        > a {
+            color: #fff;
+            font-size: 2rem;
+        }
+    }
+}

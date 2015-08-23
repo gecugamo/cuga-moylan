@@ -1,0 +1,36 @@
+/*
+ * Skills
+ *****************************************************************************************************************************/
+.skills {
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.skills-heading {
+    margin-bottom: 1rem;
+}
+
+.skill {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.skill-level {
+    width: 0;
+    height: .5rem;
+    margin-top: .5rem;
+    background-color: $light-blue;
+    transition: width 1s ease-in-out;
+
+    .skill:nth-child(2n) & {
+        background-color: $light-violet;
+    }
+
+    .skill:nth-child(3n) & {
+        background-color: $light-tan;
+    }
+
+    .skill:nth-child(4n) & {
+        background-color: $light-green;
+    }
+}
