@@ -1,15 +1,15 @@
 <section id="about" class="section">
     <h4 class="section-title">about</h4>
-    <div class="row">
-        <div class="col-md-6  section-divider">
+    <div class="flex-row">
+        <div class="flex-item md-half section-divider">
             <p class="section-intro">A keen eye for detail.<br/>A unquenchable thirst for knowledge.</p>
             <p>I'm a self taught Front-End Web Developer from Chicago.<br />I have an affinity for simplicity and organization.</p>
             <p>I love writing CSS, JavaScript, and creating WordPress themes.<br />I am constantly looking to learn new skills and challenge myself.</p>
             <p>When I'm not coding, I like to spend time with my wife, Leigh,<br /> listen to music, and tinker with computer hardware.</p>
         </div>
-        <div class="col-md-6 section-divider-pt-2">
-            <div class="row">
-                <div class="col-md-6">
+        <div class="flex-item md-half section-divider-pt-2">
+            <div class="flex-row">
+                <div class="flex-item md-half">
                     <div class="skills">
                         <h4>Languages</h4>
                         <ul class="skills-list">
@@ -32,7 +32,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="flex-item md-half">
                     <div class="skills">
                         <h4 class="skills-heading">Frameworks/Libraries</h4>
                         <ul class="skills-list">
@@ -55,9 +55,7 @@
                         </ul>
                     </div>
                 </div>
-            </div><!-- /.row -->
-            <div class="row">
-                <div class="col-md-6">
+                <div class="flex-item md-half">
                     <div class="skills">
                         <h4 class="skills-heading">Tools</h4>
                         <ul class="skills-list">
@@ -80,7 +78,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="flex-item md-half">
                     <h4>Other Skills</h4>
                     <ul class="skills">
                         <li class="skill">

@@ -8,7 +8,7 @@
         <title>Gary Cuga-Moylan's Portfolio</title>
 
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
-        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:400|Oswald:400|Open+Sans'>
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:400|Oswald:400|Quicksand'>
         <link rel="stylesheet" type="text/css" href="style.css">
 
         <script src="assets/js/modernizr.js"></script>

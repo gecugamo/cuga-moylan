@@ -1,29 +1,32 @@
 'use strict';
 
 function addFormClass() {
-    this.classList.add('filled');                                   // Add filled class
+    this.classList.add('filled');                                               // Add filled class
 }
 
 function checkFormValue() {
-    if (!this.value) {                                              // If the element does not have a value
-        this.classList.remove('filled');                            // Remove filled class
+    if (!this.value) {                                                          // If the element does not have a value
+        this.classList.remove('filled');                                        // Remove filled class
     }
 }
 
-function loopFormEls() {
-    var form, els, len;                                             // Declare variables
-    form = document.forms.contact;                                  // Form element
-    els = form.elements;                                            // Form control elements
-    len = els.length;                                               // Number of form control elements
 
-    for (var i = 0; i < len; i++) {                                 // Loop through elements
-        els[i].addEventListener('focus', addFormClass);             // On focus, call addFormClass
-        els[i].addEventListener('blur', checkFormValue);            // On blur, call checkFormValue
+(function() {
+
+    var form, els, len, activeClass;                                            // Declare variables
+    form = document.forms.contact;                                              // Form element
+    els = form.elements;                                                        // Form control elements
+    len = els.length;                                                           // Number of form control elements
+    activeClass = 'filled';
+
+    for (var i = 0; i < len; i++) {                                             // Loop through elements
+        els[i].addEventListener('focus', addFormClass);                         // On focus, call addFormClass
+        els[i].addEventListener('blur', checkFormValue);                        // On blur, call checkFormValue
     };
-}
+}());
 
 // (function() {
-//     var form, els, requiredEls, email, pattern, len;              // Declare variables
+//     var form, els, requiredEls, email, pattern, len;                         // Declare variables
 //     form = document.forms.contact;
 //     requiredEls = document.getElementsByClassName('required');
 //     email = form.els.email;
@@ -98,8 +101,4 @@ window.addEventListener('scroll', function() {
     setTimeout(function() {
         executeSetWidth('.skill-level');
     }, 100);
-}, false);
-
-document.addEventListener('DOMContentLoaded', function() {
-    loopFormEls();
 }, false);

@@ -1,7 +1,7 @@
 <section id="work" class="section">
     <h4 class="section-title">work</h4>
-    <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="flex-row">
+        <div class="flex-item sm-half md-third lg-fourth">
             <a class="work-card" href="#0" target="_blank">
                     <img class="work-img" src="assets/img/lr_style_2.jpg" alt="Screenshot from lrstyle.com" />
                 <span class="work-body">
@@ -31,7 +31,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flex-item sm-half md-third lg-fourth">
             <a class="work-card" href="#0" target="_blank">
                     <img class="work-img" src="assets/img/mmequip_2.jpg" alt="Screenshot from mmequip.com" />
                 <span class="work-body">
@@ -61,7 +61,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flex-item sm-half md-third lg-fourth">
             <a class="work-card" href="#0" target="_blank">
                     <img class="work-img" src="assets/img/custom_ledgers_2.jpg" alt="Screenshot from customledgers.com" />
                 <span class="work-body">
@@ -90,7 +90,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flex-item sm-half md-third lg-fourth">
             <a class="work-card" href="#0" target="_blank">
                     <img class="work-img" src="assets/img/youth_specialties_2.jpg" alt="Screenshot from youthspecialties.com" />
                 <span class="work-body">
@@ -120,7 +120,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flex-item sm-half md-third lg-fourth">
             <a class="work-card" href="#0" target="_blank">
                     <img class="work-img" src="assets/img/covered_affairs_2.jpg" alt="Screenshot from coveredaffairs.com" />
                 <span class="work-body">
@@ -150,7 +150,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flex-item sm-half md-third lg-fourth">
             <a class="work-card" href="#0" target="_blank">
                     <img class="work-img" src="assets/img/acm_web_2.jpg" alt="Screenshot from acmweb.com" />
                 <span class="work-body">
@@ -180,7 +180,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flex-item sm-half md-third lg-fourth">
             <a class="work-card" href="#0" target="_blank">
                     <img class="work-img" src="assets/img/dna_2.jpg" alt="Screenshot from go4dna.com" />
                 <span class="work-body">
@@ -210,7 +210,7 @@
                 </span>
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="flex-item sm-half md-third lg-fourth">
             <a class="work-card" href="#0" target="_blank">
                     <img class="work-img" src="assets/img/wedding_2.jpg" alt="Screenshot from wedding website" />
                 <span class="work-body">

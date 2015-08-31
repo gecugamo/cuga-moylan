@@ -4,15 +4,17 @@
 .header {
     height: 100rem;
     height: 100vh;
-    background: #fff url('assets/img/desk.jpg') no-repeat;
+    background: $blue;
+    background-image:
+    linear-gradient(to bottom right, rgba($blue, .98),  rgba($green, .98)),
+    url('assets/img/desk.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 }
 
 .header-overlay {
     height: 100%;
-    background-color: $blue;
-    background-color: rgba($blue, .95);
 }
 
 .header-content {
@@ -27,7 +29,7 @@
 
     > h1 {
         font: {
-          family: $oswald;
+          family: $heading-font-family;
           size: 7.5rem;
         };
     }

@@ -32,17 +32,16 @@
 }
 
 .contact-links {
-    list-style-type: none;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 11.2rem;
     background-color: $blue;
 
     > li {
-        display: inline-block;
-
-        &:not(:last-child) {
-            margin-right: 2rem;
-        }
+        flex: 1 0 auto;
+        max-width: 8rem;
 
         > a {
             color: #fff;

@@ -1,7 +1,7 @@
 <section id="contact" class="section">
     <h4 class="section-title">contact</h4>
-    <div class="row">
-        <div class="col-md-6 col-lg-7">
+    <div class="flex-row">
+        <div class="flex-item md-half">
             <div class="contact-card">
                 <img class="contact-img" src="assets/img/gary_cuga_moylan.jpg" alt="Gary Cuga-Moylan, Front-End Web Developer" />
                 <div class="contact-body">
@@ -14,7 +14,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-6 col-lg-5">
+        <div class="flex-item md-half">
             <form name="contact">
                 <div class="form-group">
                     <input class="required" name="name" type="text" />
