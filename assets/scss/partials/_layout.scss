@@ -1,0 +1,64 @@
+/*
+ * Section
+ *****************************************************************************************************************************/
+.section {
+    @extend .container;
+    padding-top: 8rem;
+}
+
+.section-divider {
+    margin-bottom: 2rem;
+
+    @media #{$screen-md-min} {
+        margin-bottom: 0;
+        border-right: 1px solid $faint;
+        padding-right: 3rem;
+    }
+}
+
+.section-divider-pt-2 {
+    @media #{$screen-md-min} {
+        padding-left: 4rem;
+    }
+}
+
+.section-next {
+    margin-top: 2rem;
+    border-bottom: 0.1rem solid #ddd;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: right;
+}
+
+.section-scroll {
+    display: inline-block;
+    position: relative;
+    padding-right: .2rem;
+    padding-left: .2rem;
+    font-size: 2rem;
+    @extend .up-down;
+
+    &:hover {
+        color: #fff;
+
+        &::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #000;
+        opacity: 0;
+        transform: scale(0);
+        transition: all 250ms ease-in-out;
+    }
+}

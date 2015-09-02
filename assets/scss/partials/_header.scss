@@ -26,19 +26,20 @@
     * {
         color: #fff;
     }
+}
 
-    > h1 {
-        font: {
-          family: $heading-font-family;
-          size: 7.5rem;
-        };
+.header-name {
+    font-family: $heading-font-family;
+
+    @media #{$screen-xs-min} {
+        font-size: 5.6rem;
     }
 
-    > a {
-        @include down-up;
+    @media #{$screen-sm-min} {
+        font-size: 6.4rem;
+    }
 
-        > i {
-            font-size: 2rem;
-        }
+    @media #{$screen-md-min} {
+        font-size: 7.6rem;
     }
 }

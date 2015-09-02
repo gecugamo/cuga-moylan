@@ -22,15 +22,15 @@
     background-color: $light-blue;
     transition: width 1s ease-in-out;
 
-    .skill:nth-child(2n) & {
+    .skill:nth-of-type(2n) & {
         background-color: $light-violet;
     }
 
-    .skill:nth-child(3n) & {
+    .skill:nth-of-type(3n) & {
         background-color: $light-tan;
     }
 
-    .skill:nth-child(4n) & {
+    .skill:nth-of-type(4n) & {
         background-color: $light-green;
     }
 }

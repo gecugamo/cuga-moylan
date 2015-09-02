@@ -17,9 +17,9 @@
         <header class="header">
             <div class="header-overlay">
                 <div class="header-content">
-                    <h1>gary cuga-moylan</h1>
+                    <h1 class="header-name">gary cuga-moylan</h1>
                     <p>Front-end web developer</p>
-                    <a href="#work"><i class="icon-angle-double-down"></i></a>
+                    <a class="section-scroll" href="#work"><i class="icon-angle-double-down"></i></a>
                 </div>
             </div>
         </header>

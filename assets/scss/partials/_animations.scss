@@ -1,6 +1,18 @@
 /*
  * 4.0 Animations
  *****************************************************************************************************************************/
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0);
+    } 25% {
+        transform: rotate(15deg);
+    } 50% {
+        transform: rotate(-15deg);
+    } 75% {
+        transform: rotate(15deg);
+    }
+}
+
 @keyframes bg-color-change {
     0%, 100% {
         background-color: rgba($blue, .95);
@@ -13,10 +25,15 @@
     }
 }
 
-@keyframes move-down {
+@keyframes up-down {
     0%, 100% {
         transform: translateY(0);
-    } 50% {
+    }
+    50% {
         transform: translateY(.5rem);
     }
+}
+
+.up-down {
+    animation: up-down 2.5s ease-in-out infinite;
 }

@@ -1,8 +1,3 @@
 /*
  * Mixins
  *****************************************************************************************************************************/
-
-/* Animations */
-@mixin down-up($duration: 2.5s) {
-    animation: move-down $duration ease-in-out infinite;
-}

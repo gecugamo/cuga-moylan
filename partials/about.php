@@ -99,6 +99,6 @@
         </div>
     </div><!-- /.row -->
     <div class="section-next">
-        <a href="#contact"><i class="icon-angle-double-down"></i></a>
+        <a class="section-scroll" href="#contact"><i class="icon-angle-double-down"></i></a>
     </div>
 </section>

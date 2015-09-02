@@ -73,20 +73,20 @@ label::after {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: .4rem;
+    height: .5rem;
     background-color: $light-blue;
     transform: translateX(-100%);
 }
 
-.form-group:nth-child(2n) label::after {
+.form-group:nth-of-type(2n) label::after {
     background-color: $light-violet;
 }
 
-.form-group:nth-child(3n) label::after {
+.form-group:nth-of-type(3n) label::after {
     background-color: $light-tan;
 }
 
-.form-group:nth-child(4n) label::after {
+.form-group:nth-of-type(4n) label::after {
     background-color: $light-green;
 }
 
@@ -102,7 +102,7 @@ input.error + label::after {
 }
 
 // Error
-input.error + label::after {
+input:invalid + label::after {
     background-color: crimson;
 
     .form-group:nth-child(2n) &,

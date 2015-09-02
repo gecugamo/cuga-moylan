@@ -7,10 +7,14 @@
  }
 
 .contact-card {
-    width: 36rem;
+    max-width: 36rem;
     position: relative;
-    margin-top: 7.5rem;
+    margin: 7.5rem auto 6rem;
     text-align: center;
+
+    @media #{$screen-sm-min} {
+        margin-bottom: 0;
+    }
 }
 
 .contact-img {
@@ -46,6 +50,11 @@
         > a {
             color: #fff;
             font-size: 2rem;
+
+            &:hover,
+            &:focus {
+                animation: wiggle 250ms linear;
+            }
         }
     }
 }

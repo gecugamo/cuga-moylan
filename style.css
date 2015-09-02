@@ -63,12 +63,10 @@ table {
 /*
  * Mixins
  *****************************************************************************************************************************/
-/* Animations */
 /*
  * Settings
  *****************************************************************************************************************************/
 /* Typography */
-/* Grid */
 /*
  * 2. Partials
  */
@@ -91,8 +89,7 @@ table {
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 0;
-  transition: all .25s ease-in-out; }
+  outline: 0; }
 
 /* Set root font size to 10px for easy manipulation with rem units */
 html {
@@ -360,6 +357,71 @@ p {
   font-size: 3.2rem; }
 
 /*
+ * 4.0 Animations
+ *****************************************************************************************************************************/
+@-webkit-keyframes wiggle {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  25% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); }
+  50% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  75% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); } }
+@keyframes wiggle {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  25% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); }
+  50% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  75% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg); } }
+@-webkit-keyframes bg-color-change {
+  0%, 100% {
+    background-color: rgba(35, 45, 56, 0.95); }
+  25% {
+    background-color: rgba(55, 58, 87, 0.95); }
+  50% {
+    background-color: rgba(134, 117, 90, 0.95); }
+  75% {
+    background-color: rgba(47, 74, 74, 0.95); } }
+@keyframes bg-color-change {
+  0%, 100% {
+    background-color: rgba(35, 45, 56, 0.95); }
+  25% {
+    background-color: rgba(55, 58, 87, 0.95); }
+  50% {
+    background-color: rgba(134, 117, 90, 0.95); }
+  75% {
+    background-color: rgba(47, 74, 74, 0.95); } }
+@-webkit-keyframes up-down {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem); } }
+@keyframes up-down {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem); } }
+.up-down, .section-scroll {
+  -webkit-animation: up-down 2.5s ease-in-out infinite;
+          animation: up-down 2.5s ease-in-out infinite; }
+
+/*
  * 2.2 Header
  *****************************************************************************************************************************/
 .header {
@@ -382,16 +444,18 @@ p {
           transform: translateY(-50%); }
   .header-content * {
     color: #fff; }
-  .header-content > h1 {
-    font-family: "Oswald", sans-serif;
-    font-size: 75px;
-    font-size: 7.5rem; }
-  .header-content > a {
-    -webkit-animation: move-down 2.5s ease-in-out infinite;
-            animation: move-down 2.5s ease-in-out infinite; }
-    .header-content > a > i {
-      font-size: 20px;
-      font-size: 2rem; }
+
+.header-name {
+  font-family: "Oswald", sans-serif; }
+  @media only screen and (min-width: 30rem) {
+    .header-name {
+      font-size: 5.6rem; } }
+  @media only screen and (min-width: 48rem) {
+    .header-name {
+      font-size: 6.4rem; } }
+  @media only screen and (min-width: 62rem) {
+    .header-name {
+      font-size: 7.6rem; } }
 
 /*
  * 2.3 Footer
@@ -479,19 +543,19 @@ label::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  height: .4rem;
+  height: 5px;
+  height: .5rem;
   background-color: #546c86;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%); }
 
-.form-group:nth-child(2n) label::after {
+.form-group:nth-of-type(2n) label::after {
   background-color: #6c71a2; }
 
-.form-group:nth-child(3n) label::after {
+.form-group:nth-of-type(3n) label::after {
   background-color: #bfb3a0; }
 
-.form-group:nth-child(4n) label::after {
+.form-group:nth-of-type(4n) label::after {
   background-color: #619898; }
 
 input.filled + label > span,
@@ -505,9 +569,9 @@ input.error + label::after {
   -webkit-transform: translateX(0);
           transform: translateX(0); }
 
-input.error + label::after {
+input:invalid + label::after {
   background-color: crimson; }
-  .form-group:nth-child(2n) input.error + label::after, .form-group:nth-child(3n) input.error + label::after {
+  .form-group:nth-child(2n) input:invalid + label::after, .form-group:nth-child(3n) input:invalid + label::after {
     background-color: crimson; }
 
 /*
@@ -515,55 +579,40 @@ input.error + label::after {
  *****************************************************************************************************************************/
 .button {
   display: inline-block;
-  border: 0;
-  padding: 10px 20px;
-  padding: 1rem 2rem;
-  color: #fff;
-  background-color: #546c86;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #353535;
+  padding: 15px 30px;
+  padding: 1.5rem 3rem;
+  color: #353535;
+  background-color: #fff;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   text-transform: lowercase; }
   .button:hover, .button:focus {
     color: #fff;
-    background-color: #232D38;
     cursor: pointer; }
 
-/*
- * 4.0 Animations
- *****************************************************************************************************************************/
-@-webkit-keyframes bg-color-change {
-  0%, 100% {
-    background-color: rgba(35, 45, 56, 0.95); }
-  25% {
-    background-color: rgba(55, 58, 87, 0.95); }
-  50% {
-    background-color: rgba(134, 117, 90, 0.95); }
-  75% {
-    background-color: rgba(47, 74, 74, 0.95); } }
-@keyframes bg-color-change {
-  0%, 100% {
-    background-color: rgba(35, 45, 56, 0.95); }
-  25% {
-    background-color: rgba(55, 58, 87, 0.95); }
-  50% {
-    background-color: rgba(134, 117, 90, 0.95); }
-  75% {
-    background-color: rgba(47, 74, 74, 0.95); } }
-@-webkit-keyframes move-down {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  50% {
-    -webkit-transform: translateY(0.5rem);
-            transform: translateY(0.5rem); } }
-@keyframes move-down {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  50% {
-    -webkit-transform: translateY(0.5rem);
-            transform: translateY(0.5rem); } }
+.button--wapasha::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  background-color: #232D38;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  transition: all 250ms ease-in-out; }
+
+.button--wapasha:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1; }
+
 /*
  * Section
  *****************************************************************************************************************************/
@@ -571,26 +620,59 @@ input.error + label::after {
   padding-top: 80px;
   padding-top: 8rem; }
 
-@media only screen and (min-width: 992px) {
-  .section-divider {
-    border-right: 1px solid #ddd;
-    padding-right: 3rem; } }
+.section-divider {
+  margin-bottom: 20px;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 62rem) {
+    .section-divider {
+      margin-bottom: 0;
+      border-right: 1px solid #ddd;
+      padding-right: 3rem; } }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 62rem) {
   .section-divider-pt-2 {
     padding-left: 4rem; } }
 
 .section-next {
-  margin-top: 40px;
-  margin-top: 4rem;
+  margin-top: 20px;
+  margin-top: 2rem;
   border-bottom: 1px solid #ddd;
   border-bottom: 0.1rem solid #ddd;
+  padding-top: 10px;
+  padding-top: 1rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
   text-align: right; }
-  .section-next > a {
-    -webkit-animation: move-down 2.5s ease-in-out infinite;
-            animation: move-down 2.5s ease-in-out infinite;
-    font-size: 20px;
-    font-size: 2rem; }
+
+.section-scroll {
+  display: inline-block;
+  position: relative;
+  padding-right: 2px;
+  padding-right: .2rem;
+  padding-left: 2px;
+  padding-left: .2rem;
+  font-size: 20px;
+  font-size: 2rem; }
+  .section-scroll:hover {
+    color: #fff; }
+    .section-scroll:hover::before {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); }
+  .section-scroll::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    transition: all 250ms ease-in-out; }
 
 /*
  * Work Card
@@ -607,13 +689,24 @@ input.error + label::after {
   margin: 0 auto 3rem;
   border: 1px solid #ddd;
   border: 0.1rem solid #ddd;
-  color: #353535; }
+  color: #353535;
+  transition: all 250ms ease-in-out; }
   .work-card:hover, .work-card:focus {
-    -webkit-transform: translateY(-0.5rem);
-            transform: translateY(-0.5rem);
-    border-color: #bbb;
+    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
+    border-bottom-width: 5px;
+    border-bottom-width: .5rem;
+    border-bottom-color: #546c86;
     color: #353535;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem); }
+  div:nth-of-type(2n) .work-card:hover, div:nth-of-type(2n) .work-card:focus {
+    border-bottom-color: #619898; }
+  div:nth-of-type(3n) .work-card:hover, div:nth-of-type(3n) .work-card:focus {
+    border-bottom-color: #bfb3a0; }
+  div:nth-of-type(4n) .work-card:hover, div:nth-of-type(4n) .work-card:focus {
+    border-bottom-color: #6c71a2; }
 
 .work-img {
   max-width: 100%;
@@ -659,11 +752,11 @@ input.error + label::after {
   margin-top: .5rem;
   background-color: #546c86;
   transition: width 1s ease-in-out; }
-  .skill:nth-child(2n) .skill-level {
+  .skill:nth-of-type(2n) .skill-level {
     background-color: #6c71a2; }
-  .skill:nth-child(3n) .skill-level {
+  .skill:nth-of-type(3n) .skill-level {
     background-color: #bfb3a0; }
-  .skill:nth-child(4n) .skill-level {
+  .skill:nth-of-type(4n) .skill-level {
     background-color: #619898; }
 
 /*
@@ -674,12 +767,15 @@ input.error + label::after {
   border: 1px solid #ddd; }
 
 .contact-card {
-  width: 360px;
-  width: 36rem;
+  max-width: 360px;
+  max-width: 36rem;
   position: relative;
-  margin-top: 75px;
-  margin-top: 7.5rem;
+  margin: 75px auto 60px;
+  margin: 7.5rem auto 6rem;
   text-align: center; }
+  @media only screen and (min-width: 48rem) {
+    .contact-card {
+      margin-bottom: 0; } }
 
 .contact-img {
   position: absolute;
@@ -727,6 +823,9 @@ input.error + label::after {
       color: #fff;
       font-size: 20px;
       font-size: 2rem; }
+      .contact-links > li > a:hover, .contact-links > li > a:focus {
+        -webkit-animation: wiggle 250ms linear;
+                animation: wiggle 250ms linear; }
 
 @font-face {
   font-family: 'fontello';

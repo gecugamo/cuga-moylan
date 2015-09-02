@@ -19,6 +19,7 @@ $light-tan: lighten($tan, 25%);
 $light-green: lighten($green, 25%);
 
 /* Breakpoints */
-$screen-sm-min: 'only screen and (min-width: 768px)';
-$screen-md-min: 'only screen and (min-width: 992px)';
-$screen-lg-min: 'only screen and (min-width: 1200px)';
+$screen-xs-min: 'only screen and (min-width: 30rem)';
+$screen-sm-min: 'only screen and (min-width: 48rem)';
+$screen-md-min: 'only screen and (min-width: 62rem)';
+$screen-lg-min: 'only screen and (min-width: 75rem)';

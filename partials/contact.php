@@ -15,15 +15,15 @@
             </div>
         </div>
         <div class="flex-item md-half">
-            <form name="contact">
+            <form id="contact-form" name="contact">
                 <div class="form-group">
-                    <input class="required" name="name" type="text" />
+                    <input name="name" type="text" required="required" />
                     <label for="name">
                         <span>Name &#42;</span>
                     </label>
                 </div>
                 <div class="form-group">
-                    <input class="required" name="email" type="email" />
+                    <input name="email" type="email" required="required" />
                     <label for="email">
                         <span>Email &#42;</span>
                     </label>
@@ -41,12 +41,12 @@
                     </label>
                 </div>
                 <div class="form-group">
-                    <button class="button" type="submit">Submit</button>
+                    <button class="button button--wapasha button--round-s">Send Request</button>
                 </div>
             </form>
         </div>
     </div><!-- /.row -->
     <div class="section-next">
-        <a href="#"><i class="icon-angle-double-up"></i></a>
+        <a class="section-scroll" href="#"><i class="icon-angle-double-up"></i></a>
     </div>
 </section>

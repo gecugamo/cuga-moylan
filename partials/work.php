@@ -241,6 +241,6 @@
         </div>
     </div><!-- /.row -->
     <div class="section-next">
-        <a href="#about"><i class="icon-angle-double-down"></i></a>
+        <a  class="section-scroll" href="#about"><i class="icon-angle-double-down"></i></a>
     </div>
 </section>
