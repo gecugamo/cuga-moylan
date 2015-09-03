@@ -1,0 +1,32 @@
+/*
+ * Nav
+ *****************************************************************************************************************************/
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 175px;
+}
+
+.nav-item {
+	flex: 0 1 auto;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #000;
+	transition: transform 250ms ease-in-out;
+
+	&:hover,
+	&:focus {
+		border: 1px solid $light-blue;
+		transform: scale(1.5);
+		background-color: transparent;
+	}
+}
