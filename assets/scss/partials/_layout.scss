@@ -1,12 +1,31 @@
 /*
  * Section
  *****************************************************************************************************************************/
-.section {
-    @extend .container;
-    padding-top: 8rem;
+.layout-wrap {
+    border-bottom: 1px solid $faint;
 }
 
-.section-divider {
+.layout {
+    @extend .container;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+    @media #{$screen-xl-h-v-min} {
+        height: 100vh;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.layout-content {
+    @media #{$screen-xl-h-v-min} {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.layout-divider {
     margin-bottom: 2rem;
 
     @media #{$screen-md-min} {
@@ -16,25 +35,26 @@
     }
 }
 
-.section-divider-pt-2 {
+.layout-divider-pt-2 {
     @media #{$screen-md-min} {
         padding-left: 4rem;
     }
 }
 
-.section-next {
-    margin-top: 2rem;
-    border-bottom: 0.1rem solid #ddd;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.layout-next {
+
+    // border-bottom: 0.1rem solid #ddd;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     text-align: right;
 }
 
-.section-scroll {
+.layout-scroll {
     display: inline-block;
     position: relative;
     padding-right: .2rem;
     padding-left: .2rem;
+    color: $charcoal;
     font-size: 2rem;
     @extend .up-down;
 

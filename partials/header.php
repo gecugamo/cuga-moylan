@@ -13,13 +13,20 @@
 
         <script src="assets/js/modernizr.js"></script>
     </head>
-    <body>
+    <body id="top">
+        <!-- <nav class="nav">
+    		<a class="nav-item" href="#"></a>
+    		<a class="nav-item" href="#work"></a>
+    		<a class="nav-item" href="#about"></a>
+    		<a class="nav-item" href="#contact"></a>
+        </nav> -->
+
         <header class="header">
             <div class="header-overlay">
                 <div class="header-content">
                     <h1 class="header-name">gary cuga-moylan</h1>
-                    <p>Front-end web developer</p>
-                    <a class="section-scroll" href="#work"><i class="icon-angle-double-down"></i></a>
+                    <p>Front-end Web Developer</p>
+                    <a class="layout-scroll" href="#work"><i class="icon-angle-double-down"></i></a>
                 </div>
             </div>
         </header>
