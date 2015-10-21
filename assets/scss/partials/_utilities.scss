@@ -1,16 +1,23 @@
 /*
  * Utilities
  *****************************************************************************************************************************/
-  /* Nicolas Galllager Micro Clearfix
-   http://nicolasgallagher.com/micro-clearfix-hack/ */
- .cf {
-     &::before,
-     &::after {
-         content: " ";
-         display: table;
-     }
 
-     &::after {
-         clear: both;
-     }
- }
+/* Nicolas Galllager Micro Clearfix
+http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf {
+    &::before,
+    &::after {
+     content: " ";
+     display: table;
+    }
+
+    &::after {
+     clear: both;
+    }
+}
+
+/* Responsive Images */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}

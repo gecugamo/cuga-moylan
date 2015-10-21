@@ -1,11 +1,3 @@
-/* VARIABLES AND MIXINS */
-
-// Responsive Breakpoints
-$xs-up: 'only screen and (min-width: 30rem)';
-$sm-up: 'only screen and (min-width: 48rem)';
-$md-up: 'only screen and (min-width: 62rem)';
-$lg-up: 'only screen and (min-width: 75rem)';
-
 // Function to generate column widths
 // for different screen sizes
 @mixin columnGenerator($prefix, $sizes) {
@@ -44,15 +36,15 @@ p {
 		padding-right: 1.5rem;
 		padding-left: 1.5rem;
 
-		@media #{$sm-up} {
+		@media #{$screen-sm-min} {
 			width: 75rem;
 		}
 
-		@media #{$md-up} {
+		@media #{$screen-md-min} {
 			width: 97rem;
 		}
 
-		@media #{$lg-up} {
+		@media #{$screen-lg-min} {
 			width: 117rem;
 		}
 }
@@ -82,18 +74,18 @@ p {
   padding-left: 1.5rem;
 }
 
-@media #{$xs-up} {
+@media #{$screen-xs-min} {
 	@include columnGenerator('xs', $widths);
 }
 
-@media #{$sm-up} {
+@media #{$screen-sm-min} {
 	@include columnGenerator('sm', $widths);
 }
 
-@media #{$md-up} {
+@media #{$screen-md-min} {
 	@include columnGenerator('md', $widths);
 }
 
-@media #{$lg-up} {
+@media #{$screen-lg-min} {
 	@include columnGenerator('lg', $widths);
 }

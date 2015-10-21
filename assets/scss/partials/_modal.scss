@@ -1,0 +1,90 @@
+/*
+ * Modal
+ *****************************************************************************************************************************/
+
+.modal__overlay {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.modal {
+	position: relative;
+	z-index: 200;
+	margin: 1.5rem;
+	background-color: #fff;
+	
+	@media #{$screen-sm-min} {
+		width: 60rem;
+		margin: 3rem auto;
+	}
+}
+
+.modal__header {
+	position: relative;
+	border-bottom: .1rem solid #ddd;
+	padding: 1.5rem;
+	color: #fff;
+	background-color: $blue;
+	font: {
+		size: 1.8rem;
+		weight: $heading-font-weight;
+	};
+}
+
+.modal__close {
+	display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+	color: #fff;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.modal__body {
+	padding: 2rem 1rem;
+	
+	&::after {
+		display: table;
+		content: ' ';
+		clear: both;
+		
+	}
+}
+
+.project__info,
+.project__code_example {
+	width: 50%;
+	float: left;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.project__img {
+	@extend .img-responsive;
+	margin-bottom: 1rem;
+}
+
+pre {
+	border: 1px solid $blue;
+	border-left-width: 10px;
+	padding: 10px;
+	font-family: 'Monaco', monospace;
+	font-size: 1.2rem;
+	overflow: auto;
+	tab-size: 2;
+}

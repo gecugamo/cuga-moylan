@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         files: ['Gruntfile.js']
       },
       css: {
-        files: 'assets/scss/*/*.scss',
+        files: ['assets/scss/*.scss', 'assets/scss/**/*.scss'],
         tasks: ['sass', 'postcss']
       }
     }

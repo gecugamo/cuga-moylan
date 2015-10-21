@@ -26,7 +26,7 @@
                 <div class="header-content">
                     <h1 class="header-name">gary cuga-moylan</h1>
                     <p>Front-end Web Developer</p>
-                    <a class="layout-scroll" href="#work"><i class="icon-angle-double-down"></i></a>
+                    <a class="layout-scroll" href="#0"><i class="icon-angle-double-down"></i></a>
                 </div>
             </div>
         </header>

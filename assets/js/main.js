@@ -1,4 +1,4 @@
-(function() {                                                                   // IIFE to avoid global namespace pollution
+(function($) {                                                                   // IIFE to avoid global namespace pollution
 
 'use strict';                                                                   // Enable strict mode
 
@@ -28,6 +28,35 @@
     var contactForm = new Form('contact-form');                                 // Create form object
 
     loopFormEls(contactForm);                                                   // Call form function
+
+    
+    // Toggle modal
+    $('body').on('click', '.work-card', function(e) {
+            e.preventDefault();
+        
+            $('.modal__overlay').toggle();
+    });
+
+    $('body').on('click', '.modal__close', function(e) {
+        e.preventDefault();
+    
+        $('.modal__overlay').hide();
+    });
+
+    // Close modal on esc or space
+    $(document).on('keyup', function(e) {
+            if (e.keyCode == 27 || e.keyCode == 32) {
+                    $('.modal__overlay').hide();
+            }
+    });
+
+    $('.layout-scroll').on('click', function(e) {
+        e.preventDefault();
+
+        $('body').animate({
+            scrollTop: $('.header').height() + 'px'
+        }, 300);
+    });
 
 
 
@@ -73,78 +102,21 @@
         }, 250);
     }, false);
 
-}());
-
-/*
- * - autoSmoothScroll -
- * Licence MIT
- * Written by Gabriel Delépine
- * Current version  1.2 (2014-02-13)
- * Previous version 1.0.1 (2013-11-08)
- * Previous version 1.0 (2013-10-27)
- * Requirement : No one, it is a framework-free fonction (ie : You do not need to include any other file in your page such as jQuery)
- * Fork-me in github :
- * */
-(function(window, undefined) // Code in a function to create an isolate scope
-{
-    'use strict';
-    var height_fixed_header = 0, // For layout with header with position:fixed. Write here the height of your header for your anchor don't be hiden behind
-        speed = 500,
-        moving_frequency = 15, // Affects performance ! High number makes scroll more smooth
-        links = document.getElementsByTagName('a'),
-        href;
-
-    for(var i=0; i<links.length; i++)
-    {
-        href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
-        if(href !== null && href.length > 1 && href.indexOf('#') != -1) // href.substr(0, 1) == '#'
-        {
-            links[i].onclick = function()
-            {
-                var element,
-                    href = this.attributes.href.nodeValue.toString(),
-                    url = href.substr(0, href.indexOf('#')),
-                    id = href.substr(href.indexOf('#')+1);
-                if(element = document.getElementById(id))
-                {
-
-                    var hop_count = (speed - (speed % moving_frequency)) / moving_frequency, // Always make an integer
-                        getScrollTopDocumentAtBegin = getScrollTopDocument(),
-                        gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
-
-                    if(window.history && typeof window.history.pushState == 'function')
-                        window.history.pushState({}, undefined, url+'#'+id);// Change URL for modern browser
-
-                    for(var i = 1; i <= hop_count; i++)
-                    {
-                        (function()
-                        {
-                            var hop_top_position = gap*i;
-                            setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
-                        })();
-                    }
-
-                    return false;
-                }
-            };
-        }
+    function checkEmail(val) {
+        var regEx = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return regEx.test(val);
     }
 
-    var getScrollTopElement =  function(e)
-    {
-        var top = height_fixed_header * -1;
+    var form = form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(e) {
+        var form, name, email, phone;
+        name = document.getElementById('contact-name');
+        email = document.getElementById('contact-email');
+        phone = document.getElementById('contact-phone');
 
-        while (e.offsetParent != undefined && e.offsetParent != null)
-        {
-            top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
-            e = e.offsetParent;
+        if (name.val == '') {
+            e.preventDefault();
         }
+    }, false);
 
-        return top;
-    };
-
-    var getScrollTopDocument = function()
-    {
-        return document.documentElement.scrollTop !== undefined ? document.documentElement.scrollTop : document.body.scrollTop;
-    };
-})(window);
+})(jQuery);

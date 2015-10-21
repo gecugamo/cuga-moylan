@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*********************/
 /* TABLE OF CONTENTS */
 /*********************/
@@ -74,12 +73,17 @@ table {
  * Utilities
  *****************************************************************************************************************************/
 /* Nicolas Galllager Micro Clearfix
- http://nicolasgallagher.com/micro-clearfix-hack/ */
+http://nicolasgallagher.com/micro-clearfix-hack/ */
 .cf::before, .cf::after {
   content: " ";
   display: table; }
 .cf::after {
   clear: both; }
+
+/* Responsive Images */
+.img-responsive, .project__img {
+  max-width: 100%;
+  height: auto; }
 
 /*
  * 2.0 Base
@@ -99,8 +103,8 @@ body,
 p {
   color: #353535;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -170,7 +174,6 @@ a {
   color: #fff;
   background: #353535; }
 
-/* VARIABLES AND MIXINS */
 *,
 *::before,
 *::after {
@@ -194,13 +197,13 @@ p {
   padding-right: 1.5rem;
   padding-left: 15px;
   padding-left: 1.5rem; }
-  @media only screen and (min-width: 48rem) {
+  @media only screen and (min-width: 768px) {
     .container, .header-content, .layout {
       width: 75rem; } }
-  @media only screen and (min-width: 62rem) {
+  @media only screen and (min-width: 992px) {
     .container, .header-content, .layout {
       width: 97rem; } }
-  @media only screen and (min-width: 75rem) {
+  @media only screen and (min-width: 1200px) {
     .container, .header-content, .layout {
       width: 117rem; } }
 
@@ -239,7 +242,7 @@ p {
   padding-left: 15px;
   padding-left: 1.5rem; }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 480px) {
   .xs-half {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
@@ -263,7 +266,7 @@ p {
         -ms-flex-preferred-size: 20%;
             flex-basis: 20%;
     max-width: 20%; } }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 768px) {
   .sm-half {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
@@ -287,7 +290,7 @@ p {
         -ms-flex-preferred-size: 20%;
             flex-basis: 20%;
     max-width: 20%; } }
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 992px) {
   .md-half {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
@@ -311,7 +314,7 @@ p {
         -ms-flex-preferred-size: 20%;
             flex-basis: 20%;
     max-width: 20%; } }
-@media only screen and (min-width: 75rem) {
+@media only screen and (min-width: 1200px) {
   .lg-half {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
@@ -487,13 +490,13 @@ p {
 
 .header-name {
   font-family: "Oswald", sans-serif; }
-  @media only screen and (min-width: 30rem) {
+  @media only screen and (min-width: 480px) {
     .header-name {
       font-size: 5.6rem; } }
-  @media only screen and (min-width: 48rem) {
+  @media only screen and (min-width: 768px) {
     .header-name {
       font-size: 6.4rem; } }
-  @media only screen and (min-width: 62rem) {
+  @media only screen and (min-width: 992px) {
     .header-name {
       font-size: 7.6rem; } }
 
@@ -615,7 +618,7 @@ input:invalid + label::after {
 /*
  * 2.5 Buttons
  *****************************************************************************************************************************/
-.button {
+.btn {
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -628,28 +631,30 @@ input:invalid + label::after {
   font-size: 16px;
   font-size: 1.6rem;
   text-transform: lowercase; }
-  .button:hover, .button:focus {
+  .btn:hover, .btn:focus {
     color: #fff;
-    cursor: pointer; }
-
-.button--wapasha::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0;
-  background-color: #232D38;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  transition: all 250ms ease-in-out; }
-
-.button--wapasha:hover::before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1; }
+    cursor: pointer;
+    text-decoration: none; }
+  .btn:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: #232D38;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    transition: all 250ms ease-in-out; }
+  .btn.small {
+    padding: 5px 20px;
+    padding: .5rem 2rem; }
 
 /*
  * Section
@@ -662,13 +667,13 @@ input:invalid + label::after {
   padding-top: 8rem;
   padding-bottom: 80px;
   padding-bottom: 8rem; }
-  @media only screen and (min-width: 90rem) and (min-height: 56.25rem) {
+  @media only screen and (min-width: 1500px) and (min-height: 900px) {
     .layout {
       height: 100vh;
       padding-top: 0;
       padding-bottom: 0; } }
 
-@media only screen and (min-width: 90rem) and (min-height: 56.25rem) {
+@media only screen and (min-width: 1500px) and (min-height: 900px) {
   .layout-content {
     position: relative;
     top: 50%;
@@ -678,13 +683,13 @@ input:invalid + label::after {
 .layout-divider {
   margin-bottom: 20px;
   margin-bottom: 2rem; }
-  @media only screen and (min-width: 62rem) {
+  @media only screen and (min-width: 992px) {
     .layout-divider {
       margin-bottom: 0;
       border-right: 1px solid #ddd;
       padding-right: 3rem; } }
 
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 992px) {
   .layout-divider-pt-2 {
     padding-left: 4rem; } }
 
@@ -779,6 +784,90 @@ input:invalid + label::after {
     font-weight: 700; }
 
 /*
+ * Modal
+ *****************************************************************************************************************************/
+.modal__overlay {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.modal {
+  position: relative;
+  z-index: 200;
+  margin: 15px;
+  margin: 1.5rem;
+  background-color: #fff; }
+  @media only screen and (min-width: 768px) {
+    .modal {
+      width: 60rem;
+      margin: 3rem auto; } }
+
+.modal__header {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  border-bottom: .1rem solid #ddd;
+  padding: 15px;
+  padding: 1.5rem;
+  color: #fff;
+  background-color: #232D38;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 400; }
+
+.modal__close {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  right: 1.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  text-decoration: none; }
+  .modal__close:hover, .modal__close:focus {
+    color: #fff;
+    text-decoration: none; }
+
+.modal__body {
+  padding: 20px 10px;
+  padding: 2rem 1rem; }
+  .modal__body::after {
+    display: table;
+    content: ' ';
+    clear: both; }
+
+.project__info,
+.project__code_example {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+  padding-right: 1rem;
+  padding-left: 10px;
+  padding-left: 1rem; }
+
+.project__img {
+  margin-bottom: 10px;
+  margin-bottom: 1rem; }
+
+pre {
+  border: 1px solid #232D38;
+  border-left-width: 10px;
+  padding: 10px;
+  font-family: 'Monaco', monospace;
+  font-size: 12px;
+  font-size: 1.2rem;
+  overflow: auto;
+  -moz-tab-size: 2;
+       tab-size: 2; }
+
+/*
  * Skills
  *****************************************************************************************************************************/
 .skills {
@@ -825,7 +914,7 @@ input:invalid + label::after {
   margin: 75px auto 60px;
   margin: 7.5rem auto 6rem;
   text-align: center; }
-  @media only screen and (min-width: 48rem) {
+  @media only screen and (min-width: 768px) {
     .contact-card {
       margin-bottom: 0; } }
 
@@ -925,42 +1014,42 @@ input:invalid + label::after {
 .icon-jquery:before {
   content: '\e800'; }
 
-/* 'εáÇ' */
+/* '' */
 .icon-css3:before {
   content: '\e801'; }
 
-/* 'εáü' */
+/* '' */
 .icon-html5:before {
   content: '\e802'; }
 
-/* 'εáé' */
+/* '' */
 .icon-wordpress:before {
   content: '\e803'; }
 
-/* 'εáâ' */
+/* '' */
 .icon-angle-double-up:before {
   content: '\e804'; }
 
-/* 'εáä' */
+/* '' */
 .icon-angle-double-down:before {
   content: '\e805'; }
 
-/* 'εáà' */
+/* '' */
 .icon-mobile:before {
   content: '\e806'; }
 
-/* 'εáå' */
+/* '' */
 .icon-linkedin-squared:before {
   content: '\e807'; }
 
-/* 'εáç' */
+/* '' */
 .icon-github-squared:before {
   content: '\e808'; }
 
-/* 'εáê' */
+/* '' */
 .icon-codeopen:before {
   content: '\e809'; }
 
-/* 'εáë' */
+/* '' */
 
 /*# sourceMappingURL=style.css.map */
