@@ -469,7 +469,7 @@ p {
   height: 100rem;
   height: 100vh;
   background: #232D38;
-  background-image: linear-gradient(to bottom right, rgba(35, 45, 56, 0.98), rgba(47, 74, 74, 0.98)), url("assets/img/desk.jpg");
+  background-image: linear-gradient(to bottom right, rgba(8, 58, 115, 0.85), rgba(26, 121, 121, 0.85)), url("assets/img/desk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center; }
