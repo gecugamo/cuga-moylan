@@ -8,7 +8,6 @@
 @import 'settings/reset';               // 1.0 Reset
 @import 'settings/variables';           // 1.1 Variables
 @import 'settings/mixins';              // 1.2 Mixins
-@import 'settings/settings';            // 1.3 Settings
 
 /*
  * 2. Partials
@@ -24,7 +23,7 @@
 @import 'partials/forms';               // Forms
 @import 'partials/buttons';             // Buttons
 @import 'partials/layout';              // Layout
-@import 'partials/work-card';           // Work Card
+@import 'partials/projects';           // Work Card
 @import 'partials/modal';            	// Modal
 @import 'partials/skills';              // Skill
 @import 'partials/contact-card';        // Contact Card

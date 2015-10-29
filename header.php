@@ -8,7 +8,7 @@
         <title>Gary Cuga-Moylan's Portfolio</title>
 
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
-        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:400|Oswald:400|Quicksand'>
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Oxygen|Oswald'>
         <link rel="stylesheet" type="text/css" href="style.css">
 
         <script src="assets/js/modernizr.js"></script>
@@ -26,7 +26,7 @@
                 <div class="header-content">
                     <h1 class="header-name">gary cuga-moylan</h1>
                     <p>Front-end Web Developer</p>
-                    <a class="layout-scroll" href="#0"><i class="icon-angle-double-down"></i></a>
+                    <a class="layout__scroll" href="#0"><i class="icon-angle-double-down"></i></a>
                 </div>
             </div>
         </header>

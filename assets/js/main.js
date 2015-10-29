@@ -30,23 +30,27 @@
     loopFormEls(contactForm);                                                   // Call form function
 
     
-    // Toggle modal
-    $('body').on('click', '.work-card', function(e) {
+    // Project modal
+    $('body').on('click', '.project', function(e) {
             e.preventDefault();
-        
-            $('.modal__overlay').toggle();
+
+            var $this = $(this);
+            var $target = $($this.attr('href'));
+            var modalContent = $target.html();
+
+            $('.modal__overlay').append(modalContent).show();
     });
 
     $('body').on('click', '.modal__close', function(e) {
         e.preventDefault();
     
-        $('.modal__overlay').hide();
+        $('.modal__overlay').empty().hide();
     });
 
     // Close modal on esc or space
     $(document).on('keyup', function(e) {
             if (e.keyCode == 27 || e.keyCode == 32) {
-                    $('.modal__overlay').hide();
+                $('.modal__overlay').empty().hide();
             }
     });
 

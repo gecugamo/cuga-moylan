@@ -1,55 +1,20 @@
 /*
- * Section
+ * Layout
  *****************************************************************************************************************************/
-.layout-wrap {
-    border-bottom: 1px solid $faint;
+hr {
+    margin: 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: $faint;
 }
 
 .layout {
     @extend .container;
     padding-top: 8rem;
     padding-bottom: 8rem;
-
-    @media #{$screen-xl-h-v-min} {
-        height: 100vh;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
 }
 
-.layout-content {
-    @media #{$screen-xl-h-v-min} {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-
-.layout-divider {
-    margin-bottom: 2rem;
-
-    @media #{$screen-md-min} {
-        margin-bottom: 0;
-        border-right: 1px solid $faint;
-        padding-right: 3rem;
-    }
-}
-
-.layout-divider-pt-2 {
-    @media #{$screen-md-min} {
-        padding-left: 4rem;
-    }
-}
-
-.layout-next {
-
-    // border-bottom: 0.1rem solid #ddd;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    text-align: right;
-}
-
-.layout-scroll {
+.layout__scroll {
     display: inline-block;
     position: relative;
     padding-right: .2rem;
@@ -57,28 +22,28 @@
     color: $charcoal;
     font-size: 2rem;
     @extend .up-down;
+}
 
-    &:hover {
-        color: #fff;
+.layout__scroll::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 250ms ease-in-out;
+}
 
-        &::before {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
+.layout__scroll:hover {
+    color: #fff;
+}
 
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: #000;
-        opacity: 0;
-        transform: scale(0);
-        transition: all 250ms ease-in-out;
-    }
+.layout__scroll:hover::before {
+    opacity: 1;
+    transform: scale(1);
 }

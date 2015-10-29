@@ -15,6 +15,10 @@
 	background-color: rgba(0, 0, 0, .5);
 }
 
+.modal__content {
+	display: none;
+}
+
 .modal {
 	position: relative;
 	z-index: 200;
@@ -66,15 +70,15 @@
 	}
 }
 
-.project__info,
-.project__code_example {
+.modal__info,
+.modal__code_example {
 	width: 50%;
 	float: left;
 	padding-right: 1rem;
 	padding-left: 1rem;
 }
 
-.project__img {
+.modal__img {
 	@extend .img-responsive;
 	margin-bottom: 1rem;
 }

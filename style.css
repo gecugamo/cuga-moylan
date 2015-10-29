@@ -59,13 +59,10 @@ table {
  *****************************************************************************************************************************/
 /* Colors */
 /* Breakpoints */
+/* Typography */
 /*
  * Mixins
  *****************************************************************************************************************************/
-/*
- * Settings
- *****************************************************************************************************************************/
-/* Typography */
 /*
  * 2. Partials
  */
@@ -81,7 +78,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/ */
   clear: both; }
 
 /* Responsive Images */
-.img-responsive, .project__img {
+.img-responsive, .modal__img {
   max-width: 100%;
   height: auto; }
 
@@ -102,7 +99,7 @@ html {
 body,
 p {
   color: #353535;
-  font-family: "Raleway", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 400;
@@ -420,7 +417,7 @@ p {
   50% {
     -webkit-transform: translateY(0.5rem);
             transform: translateY(0.5rem); } }
-.up-down, .layout-scroll {
+.up-down, .layout__scroll {
   -webkit-animation: up-down 2.5s ease-in-out infinite;
           animation: up-down 2.5s ease-in-out infinite; }
 
@@ -537,7 +534,7 @@ textarea {
   border-color: #ddd;
   color: #353535;
   background-color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 14px;
   font-size: 1.4rem; }
 
@@ -657,50 +654,21 @@ input:invalid + label::after {
     padding: .5rem 2rem; }
 
 /*
- * Section
+ * Layout
  *****************************************************************************************************************************/
-.layout-wrap {
-  border-bottom: 1px solid #ddd; }
+hr {
+  margin: 0;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #ddd; }
 
 .layout {
   padding-top: 80px;
   padding-top: 8rem;
   padding-bottom: 80px;
   padding-bottom: 8rem; }
-  @media only screen and (min-width: 1500px) and (min-height: 900px) {
-    .layout {
-      height: 100vh;
-      padding-top: 0;
-      padding-bottom: 0; } }
 
-@media only screen and (min-width: 1500px) and (min-height: 900px) {
-  .layout-content {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); } }
-
-.layout-divider {
-  margin-bottom: 20px;
-  margin-bottom: 2rem; }
-  @media only screen and (min-width: 992px) {
-    .layout-divider {
-      margin-bottom: 0;
-      border-right: 1px solid #ddd;
-      padding-right: 3rem; } }
-
-@media only screen and (min-width: 992px) {
-  .layout-divider-pt-2 {
-    padding-left: 4rem; } }
-
-.layout-next {
-  padding-top: 15px;
-  padding-top: 1.5rem;
-  padding-bottom: 15px;
-  padding-bottom: 1.5rem;
-  text-align: right; }
-
-.layout-scroll {
+.layout__scroll {
   display: inline-block;
   position: relative;
   padding-right: 2px;
@@ -710,36 +678,39 @@ input:invalid + label::after {
   color: #353535;
   font-size: 20px;
   font-size: 2rem; }
-  .layout-scroll:hover {
-    color: #fff; }
-    .layout-scroll:hover::before {
-      opacity: 1;
-      -webkit-transform: scale(1);
-              transform: scale(1); }
-  .layout-scroll::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    transition: all 250ms ease-in-out; }
+
+.layout__scroll::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  transition: all 250ms ease-in-out; }
+
+.layout__scroll:hover {
+  color: #fff; }
+
+.layout__scroll:hover::before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
 
 /*
- * Work Card
+ * Projects
  *****************************************************************************************************************************/
-.work-card,
-.work-img,
-.work-body {
+.project,
+.project__img,
+.project__body {
   display: block; }
 
-.work-card {
+.project {
   max-width: 300px;
   max-width: 30rem;
   margin: 0 auto 30px;
@@ -748,40 +719,49 @@ input:invalid + label::after {
   border: 0.1rem solid #ddd;
   color: #353535;
   transition: all 250ms ease-in-out; }
-  .work-card:hover, .work-card:focus {
-    margin-bottom: 25px;
-    margin-bottom: 2.5rem;
-    border-bottom-width: 5px;
-    border-bottom-width: .5rem;
-    border-bottom-color: #546c86;
-    color: #353535;
-    text-decoration: none;
-    -webkit-transform: translateY(-0.5rem);
-            transform: translateY(-0.5rem); }
-  div:nth-of-type(2n) .work-card:hover, div:nth-of-type(2n) .work-card:focus {
-    border-bottom-color: #619898; }
-  div:nth-of-type(3n) .work-card:hover, div:nth-of-type(3n) .work-card:focus {
-    border-bottom-color: #bfb3a0; }
-  div:nth-of-type(4n) .work-card:hover, div:nth-of-type(4n) .work-card:focus {
-    border-bottom-color: #6c71a2; }
 
-.work-img {
+.project:hover,
+.project:focus {
+  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
+  border-bottom-width: 5px;
+  border-bottom-width: .5rem;
+  border-bottom-color: #546c86;
+  color: #353535;
+  text-decoration: none;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem); }
+
+:nth-of-type(2n) .project:hover,
+:nth-of-type(2n) .project:focus {
+  border-bottom-color: #619898; }
+
+:nth-of-type(3n) .project:hover,
+:nth-of-type(3n) .project:focus {
+  border-bottom-color: #bfb3a0; }
+
+:nth-of-type(4n) .project:hover,
+:nth-of-type(2n) .project:focus {
+  border-bottom-color: #6c71a2; }
+
+.project__img {
   max-width: 100%;
   height: auto; }
 
-.work-body {
+.project__body {
   border-top: 1px solid #ddd;
   border-top: 0.1rem solid #ddd;
   padding: 20px;
   padding: 2rem; }
 
-.work-table {
+.project__info {
   font-size: 16px;
   font-size: 1.6rem; }
-  .work-table td:first-child {
-    padding-right: 10px;
-    padding-right: 1rem;
-    font-weight: 700; }
+
+.project__info td:first-child {
+  padding-right: 10px;
+  padding-right: 1rem;
+  font-weight: 700; }
 
 /*
  * Modal
@@ -797,6 +777,9 @@ input:invalid + label::after {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.5); }
+
+.modal__content {
+  display: none; }
 
 .modal {
   position: relative;
@@ -843,8 +826,8 @@ input:invalid + label::after {
     content: ' ';
     clear: both; }
 
-.project__info,
-.project__code_example {
+.modal__info,
+.modal__code_example {
   width: 50%;
   float: left;
   padding-right: 10px;
@@ -852,7 +835,7 @@ input:invalid + label::after {
   padding-left: 10px;
   padding-left: 1rem; }
 
-.project__img {
+.modal__img {
   margin-bottom: 10px;
   margin-bottom: 1rem; }
 

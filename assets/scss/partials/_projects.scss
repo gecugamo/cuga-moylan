@@ -1,0 +1,64 @@
+/*
+ * Projects
+ *****************************************************************************************************************************/
+.project,
+.project__img,
+.project__body {
+    display: block;
+}
+
+// Project
+.project {
+    max-width: 30rem;
+    margin: 0 auto 3rem;
+    border: .1rem solid $faint;
+    color: $body-color;
+    transition: all 250ms ease-in-out;
+}
+
+.project:hover,
+.project:focus {
+    margin-bottom: 2.5rem;
+    border-bottom-width: .5rem;
+    border-bottom-color: $light-blue;
+    color: $body-color;
+    text-decoration: none;
+    transform: translateY(-.5rem);
+}
+
+:nth-of-type(2n) .project:hover,
+:nth-of-type(2n) .project:focus {
+    border-bottom-color: $light-green;
+}
+
+:nth-of-type(3n) .project:hover,
+:nth-of-type(3n) .project:focus {
+    border-bottom-color: $light-tan;
+}
+
+:nth-of-type(4n) .project:hover,
+:nth-of-type(2n) .project:focus {
+    border-bottom-color: $light-violet;
+}
+
+// Project Img
+.project__img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Project Body
+.project__body {
+    border-top: .1rem solid $faint;
+    padding: 2rem;
+}
+
+// Project Info
+.project__info {
+    font-size: 1.6rem;
+}
+
+.project__info td:first-child {
+    padding-right: 1rem;
+    font-weight: 700;
+}
