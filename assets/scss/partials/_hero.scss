@@ -1,23 +1,18 @@
 /*
- * 2.2 Header
+ * Hero
  *****************************************************************************************************************************/
-.header {
+.hero {
     height: 100rem;
     height: 100vh;
     background: $blue;
     background-image:
-    linear-gradient(to bottom right, rgba($carribean, .85),  rgba($manta-ray, .85)),
-    url('assets/img/desk.jpg');
+    linear-gradient(115deg, $blue, $green);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 }
 
-.header-overlay {
-    height: 100%;
-}
-
-.header-content {
+.hero__content {
     @extend .container;
     position: relative;
     top: 50%;
@@ -28,7 +23,7 @@
     }
 }
 
-.header-name {
+.hero__name {
     font-family: $heading-font-family;
 
     @media #{$screen-xs-min} {

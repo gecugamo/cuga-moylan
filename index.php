@@ -6,7 +6,7 @@
     <section class="layout">
         <h4 class="section-title">Work</h4>
         <div class="flex-row">
-            <div class="flex-item sm-half md-third lg-fourth">
+            <div class="flex-item sm-half md-fourth">
                 <a class="project" href="#modal__lrstyle">
                         <img class="project__img" src="assets/img/lr_style_2.jpg" alt="Screenshot from lrstyle.com" />
                     <span class="project__body">
@@ -36,7 +36,7 @@
                     </span>
                 </a>
             </div><!-- /.flex-item -->
-            <div class="flex-item sm-half md-third lg-fourth">
+            <div class="flex-item sm-half md-fourth">
                 <a class="project" href="#modal__mmequip">
                         <img class="project__img" src="assets/img/mmequip_2.jpg" alt="Screenshot from mmequip.com" />
                     <span class="project__body">
@@ -66,7 +66,7 @@
                     </span>
                 </a>
             </div><!-- /.flex-item -->
-            <div class="flex-item sm-half md-third lg-fourth">
+            <div class="flex-item sm-half md-fourth">
                 <a class="project" href="#modal__customledgers">
                         <img class="project__img" src="assets/img/customledgers_2.jpg" alt="Screenshot from customledgers.com" />
                     <span class="project__body">
@@ -95,7 +95,7 @@
                     </span>
                 </a>
             </div><!-- /.flex-item -->
-            <div class="flex-item sm-half md-third lg-fourth">
+            <div class="flex-item sm-half md-fourth">
                 <a class="project" href="#modal__youthspecialties">
                         <img class="project__img" src="assets/img/youthspecialties_2.jpg" alt="Screenshot from youthspecialties.com" />
                     <span class="project__body">
@@ -125,7 +125,9 @@
                     </span>
                 </a>
             </div><!-- /.flex-item -->
-            <div class="flex-item sm-half md-third lg-fourth">
+        </div><!-- /.flex-row -->
+        <div class="flex-row">
+            <div class="flex-item sm-half md-fourth">
                 <a class="project" href="#modal__coveredaffairs">
                         <img class="project__img" src="assets/img/coveredaffairs_2.jpg" alt="Screenshot from coveredaffairs.com" />
                     <span class="project__body">
@@ -155,7 +157,7 @@
                     </span>
                 </a>
             </div><!-- /.flex-item -->
-            <div class="flex-item sm-half md-third lg-fourth">
+            <div class="flex-item sm-half md-fourth">
                 <a class="project" href="#modal__acmweb">
                         <img class="project__img" src="assets/img/acmweb_2.jpg" alt="Screenshot from acmweb.com" />
                     <span class="project__body">
@@ -185,7 +187,7 @@
                     </span>
                 </a>
             </div><!-- /.flex-item -->
-            <div class="flex-item sm-half md-third lg-fourth">
+            <div class="flex-item sm-half md-fourth">
                 <a class="project" href="#modal__go4dna">
                         <img class="project__img" src="assets/img/go4dna_2.jpg" alt="Screenshot from go4dna.com" />
                     <span class="project__body">
@@ -215,7 +217,7 @@
                     </span>
                 </a>
             </div><!-- /.flex-item -->
-            <div class="flex-item sm-half md-third lg-fourth">
+            <div class="flex-item sm-half md-fourth">
                 <a class="project" href="#modal__cuga-moylan">
                         <img class="project__img" src="assets/img/cuga-moylan_2.jpg" alt="Screenshot from wedding website" />
                     <span class="project__body">

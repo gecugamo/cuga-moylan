@@ -20,25 +20,25 @@
 .project:focus {
     margin-bottom: 2.5rem;
     border-bottom-width: .5rem;
-    border-bottom-color: $light-blue;
+    border-bottom-color: $blue;
     color: $body-color;
     text-decoration: none;
     transform: translateY(-.5rem);
 }
 
-:nth-of-type(2n) .project:hover,
-:nth-of-type(2n) .project:focus {
-    border-bottom-color: $light-green;
+.flex-item:nth-child(2n) .project:hover,
+.flex-item:nth-child(2n) .project:focus {
+    border-bottom-color: $violet;
 }
 
-:nth-of-type(3n) .project:hover,
-:nth-of-type(3n) .project:focus {
-    border-bottom-color: $light-tan;
+.flex-item:nth-child(3n) .project:hover,
+.flex-item:nth-child(3n) .project:focus {
+    border-bottom-color: $green;
 }
 
-:nth-of-type(4n) .project:hover,
-:nth-of-type(2n) .project:focus {
-    border-bottom-color: $light-violet;
+.flex-item:nth-child(4n) .project:hover,
+.flex-item:nth-child(4n) .project:focus {
+    border-bottom-color: $tan;
 }
 
 // Project Img

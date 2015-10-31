@@ -74,20 +74,20 @@ label::after {
     left: 0;
     width: 100%;
     height: .5rem;
-    background-color: $light-blue;
+    background-color: $blue;
     transform: translateX(-100%);
 }
 
 .form-group:nth-of-type(2n) label::after {
-    background-color: $light-violet;
+    background-color: $violet;
 }
 
 .form-group:nth-of-type(3n) label::after {
-    background-color: $light-tan;
+    background-color: $green;
 }
 
 .form-group:nth-of-type(4n) label::after {
-    background-color: $light-green;
+    background-color: $tan;
 }
 
 input.filled + label > span,
