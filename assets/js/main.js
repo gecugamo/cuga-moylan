@@ -29,43 +29,4 @@
 
     loopFormEls(contactForm);                                                   // Call form function
 
-    
-    // Project modal
-    $('body').on('click', '.project', function(e) {
-            e.preventDefault();
-
-            var $this = $(this);
-            var $target = $($this.attr('href'));
-            var modalContent = $target.html();
-
-            $('.modal__overlay').append(modalContent).show();
-    });
-
-    $('body').on('click', '.modal__close', function(e) {
-        e.preventDefault();
-    
-        $('.modal__overlay').empty().hide();
-    });
-
-    // Close modal on esc or space
-    $(document).on('keyup', function(e) {
-            if (e.keyCode == 27 || e.keyCode == 32) {
-                $('.modal__overlay').empty().hide();
-            }
-    });
-
-    $('.layout-scroll').on('click', function(e) {
-        e.preventDefault();
-
-        $('body').animate({
-            scrollTop: $('.header').height() + 'px'
-        }, 300);
-    });
-
-
-    function checkEmail(val) {
-        var regEx = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-        return regEx.test(val);
-    }
-
 })(jQuery);

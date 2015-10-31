@@ -3,7 +3,7 @@
 <main>
 
 	<!-- Work -->
-    <section class="layout">
+    <section id="work" class="layout">
         <h4 class="section-title">Work</h4>
         <div class="flex-row">
             <div class="flex-item sm-half md-fourth">
@@ -376,23 +376,23 @@
                 </div>
             </div><!-- /.flex-item -->
             <div class="flex-item md-half">
-                <form id="contact-form" name="contact">
+                <form id="contact-form" name="contact" novalidate>
                     <div class="form-group">
-                        <input id="contact-name" name="contact-name" type="text" />
+                        <input id="contact-name" name="contact-name" type="text" required />
                         <label for="name">
                             <span>Name &#42;</span>
                         </label>
                     </div>
                     <div class="form-group">
-                        <input id="contact-email" name="contact-email" type="text" />
+                        <input id="contact-email" name="contact-email" type="email" required />
                         <label for="email">
                             <span>Email &#42;</span>
                         </label>
                     </div>
                     <div class="form-group">
-                        <input id="contact-phone" name="contact-phone" type="text" />
+                        <input id="contact-phone" name="contact-phone" type="text" required />
                         <label for="phone">
-                            <span>Phone</span>
+                            <span>Phone &#42;</span>
                         </label>
                     </div>
                     <div class="form-group">

@@ -14,17 +14,10 @@
         <script src="assets/js/modernizr.js"></script>
     </head>
     <body id="top">
-        <!-- <nav class="nav">
-    		<a class="nav-item" href="#"></a>
-    		<a class="nav-item" href="#work"></a>
-    		<a class="nav-item" href="#about"></a>
-    		<a class="nav-item" href="#contact"></a>
-        </nav> -->
-
         <header class="hero">
             <div class="hero__content">
                 <h1 class="hero__name">gary cuga-moylan</h1>
                 <p>Front-end Web Developer</p>
-                <a class="layout__scroll" href="#0"><i class="icon-angle-double-down"></i></a>
+                <a class="layout__scroll" href="#work"><i class="icon-angle-double-down"></i></a>
             </div>
         </header>
