@@ -14,6 +14,7 @@
         size: 1.6rem;
     };
     text-transform: lowercase;
+    transition: all 250ms ease-in-out;
 
     &:hover,
     &:focus {

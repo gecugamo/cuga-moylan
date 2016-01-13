@@ -1,9 +1,7 @@
 /*********************/
 /* TABLE OF CONTENTS */
 /*********************/
-/*
- * 1. Settings
- */
+@import url("http://fonts.googleapis.com/css?family=Oxygen|Oswald");
 /*
  * Reset
  *****************************************************************************************************************************/
@@ -60,12 +58,6 @@ table {
 /* Colors */
 /* Breakpoints */
 /* Typography */
-/*
- * Mixins
- *****************************************************************************************************************************/
-/*
- * 2. Partials
- */
 /*
  * Utilities
  *****************************************************************************************************************************/
@@ -171,6 +163,9 @@ a {
   color: #fff;
   background: #353535; }
 
+/**********/
+/** GRID **/
+/**********/
 *,
 *::before,
 *::after {
@@ -179,151 +174,38 @@ a {
 .container, .hero__content, .layout {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-right: 1.5rem;
-  padding-left: 15px;
-  padding-left: 1.5rem; }
-  @media only screen and (min-width: 768px) {
+  padding-right: 10px;
+  padding-left: 10px; }
+  @media only screen and (min-width: 980px) {
     .container, .hero__content, .layout {
-      width: 75rem; } }
-  @media only screen and (min-width: 992px) {
-    .container, .hero__content, .layout {
-      width: 97rem; } }
-  @media only screen and (min-width: 1200px) {
-    .container, .hero__content, .layout {
-      width: 117rem; } }
+      width: 980px; } }
 
-.flex-row {
+.row {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin-right: -15px;
-  margin-right: -1.5rem;
-  margin-left: -15px;
-  margin-left: -1.5rem; }
-  .flex-row.flex-center {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .flex-row.flex-dist .flex-item {
-    -webkit-flex-basis: 0;
-        -ms-flex-preferred-size: 0;
-            flex-basis: 0; }
+  margin-right: -10px;
+  margin-left: -10px; }
 
-.flex-item {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-  padding-right: 15px;
-  padding-right: 1.5rem;
-  padding-left: 15px;
-  padding-left: 1.5rem; }
+.column {
+  position: relative;
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  max-width: 100%;
+  max-width: calc(100% - 20px);
+  min-height: 1px;
+  margin-right: 10px;
+  margin-left: 10px; }
+  @media only screen and (min-width: 640px) {
+    .column {
+      -webkit-flex-basis: 0;
+          -ms-flex-preferred-size: 0;
+              flex-basis: 0; } }
 
-@media only screen and (min-width: 480px) {
-  .xs-half {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-    max-width: 50%; }
-
-  .xs-third {
-    -webkit-flex-basis: 33.33333%;
-        -ms-flex-preferred-size: 33.33333%;
-            flex-basis: 33.33333%;
-    max-width: 33.33333%; }
-
-  .xs-fourth {
-    -webkit-flex-basis: 25%;
-        -ms-flex-preferred-size: 25%;
-            flex-basis: 25%;
-    max-width: 25%; }
-
-  .xs-fifth {
-    -webkit-flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-            flex-basis: 20%;
-    max-width: 20%; } }
-@media only screen and (min-width: 768px) {
-  .sm-half {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-    max-width: 50%; }
-
-  .sm-third {
-    -webkit-flex-basis: 33.33333%;
-        -ms-flex-preferred-size: 33.33333%;
-            flex-basis: 33.33333%;
-    max-width: 33.33333%; }
-
-  .sm-fourth {
-    -webkit-flex-basis: 25%;
-        -ms-flex-preferred-size: 25%;
-            flex-basis: 25%;
-    max-width: 25%; }
-
-  .sm-fifth {
-    -webkit-flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-            flex-basis: 20%;
-    max-width: 20%; } }
-@media only screen and (min-width: 992px) {
-  .md-half {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-    max-width: 50%; }
-
-  .md-third {
-    -webkit-flex-basis: 33.33333%;
-        -ms-flex-preferred-size: 33.33333%;
-            flex-basis: 33.33333%;
-    max-width: 33.33333%; }
-
-  .md-fourth {
-    -webkit-flex-basis: 25%;
-        -ms-flex-preferred-size: 25%;
-            flex-basis: 25%;
-    max-width: 25%; }
-
-  .md-fifth {
-    -webkit-flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-            flex-basis: 20%;
-    max-width: 20%; } }
-@media only screen and (min-width: 1200px) {
-  .lg-half {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-    max-width: 50%; }
-
-  .lg-third {
-    -webkit-flex-basis: 33.33333%;
-        -ms-flex-preferred-size: 33.33333%;
-            flex-basis: 33.33333%;
-    max-width: 33.33333%; }
-
-  .lg-fourth {
-    -webkit-flex-basis: 25%;
-        -ms-flex-preferred-size: 25%;
-            flex-basis: 25%;
-    max-width: 25%; }
-
-  .lg-fifth {
-    -webkit-flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-            flex-basis: 20%;
-    max-width: 20%; } }
 /*
  * Typography
  *****************************************************************************************************************************/
@@ -613,7 +495,8 @@ input:invalid + label::after {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  transition: all 250ms ease-in-out; }
   .btn:hover, .btn:focus {
     color: #fff;
     cursor: pointer;
@@ -697,10 +580,8 @@ hr {
   display: block; }
 
 .project {
-  max-width: 300px;
-  max-width: 30rem;
-  margin: 0 auto 30px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 20px;
+  margin: 0 auto 2rem;
   border: 1px solid #ddd;
   border: 0.1rem solid #ddd;
   color: #353535;
@@ -708,8 +589,8 @@ hr {
 
 .project:hover,
 .project:focus {
-  margin-bottom: 25px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
   border-bottom-width: 5px;
   border-bottom-width: .5rem;
   border-bottom-color: #284587;
@@ -764,9 +645,6 @@ hr {
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.5); }
 
-.modal__content {
-  display: none; }
-
 .modal {
   position: relative;
   z-index: 200;
@@ -777,6 +655,10 @@ hr {
     .modal {
       width: 60rem;
       margin: 3rem auto; } }
+
+.modal__content {
+  position: relative;
+  z-index: 150; }
 
 .modal__header {
   position: relative;

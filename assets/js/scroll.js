@@ -2,14 +2,14 @@
 
     'use strict';                                                               // Enable strict mode
 
-    $('.layout__scroll').on('click', function(e) {                                // Pass the id of the desination as the value of the href attribute
+    $('[data-scroll]').on('click', function(e) {                                // Pass the id of the desination as the value of the href attribute
         e.preventDefault();
 
-        var $target = $($(this).attr('href'));
-        var $destination = $target.offset().top;
+        var $target = $($(this).attr('data-scroll'));
+        var destination = $target.offset().top;
 
-        $('body').animate({
-            scrollTop: $destination + 'px'
+        $('html, body').animate({
+            scrollTop: destination + 'px'
         }, 300);
     });
 

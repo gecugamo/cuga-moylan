@@ -15,10 +15,6 @@
 	background-color: rgba(0, 0, 0, .5);
 }
 
-.modal__content {
-	display: none;
-}
-
 .modal {
 	position: relative;
 	z-index: 200;
@@ -29,6 +25,11 @@
 		width: 60rem;
 		margin: 3rem auto;
 	}
+}
+
+.modal__content {
+	position: relative;
+	z-index: 150;
 }
 
 .modal__header {

@@ -2,29 +2,24 @@
 /* TABLE OF CONTENTS */
 /*********************/
 
-/*
- * 1. Settings
- */
-@import 'settings/reset';               // 1.0 Reset
-@import 'settings/variables';           // 1.1 Variables
-@import 'settings/mixins';              // 1.2 Mixins
+@import url('http://fonts.googleapis.com/css?family=Oxygen|Oswald');
 
-/*
- * 2. Partials
- */
-@import 'partials/utilities';           // Utilities
-@import 'partials/base';                // Base
-@import 'partials/grid';                // Grid
-@import 'partials/typography';          // Typography
-@import 'partials/animations';          // Animations
-@import 'partials/nav';                 // Nav
-@import 'partials/hero';              // Header
-@import 'partials/footer';              // Footer
-@import 'partials/forms';               // Forms
-@import 'partials/buttons';             // Buttons
-@import 'partials/layout';              // Layout
-@import 'partials/projects';           // Work Card
-@import 'partials/modal';            	// Modal
-@import 'partials/skills';              // Skill
-@import 'partials/contact-card';        // Contact Card
-@import 'partials/fontello';            // Fontello
+@import 'settings/reset';
+@import 'settings/variables';
+
+@import 'partials/utilities';
+@import 'partials/base';
+@import 'partials/grid';
+@import 'partials/typography';
+@import 'partials/animations';
+@import 'partials/nav';               
+@import 'partials/hero';
+@import 'partials/footer';
+@import 'partials/forms';
+@import 'partials/buttons';
+@import 'partials/layout';
+@import 'partials/projects';
+@import 'partials/modal';
+@import 'partials/skills';
+@import 'partials/contact-card';
+@import 'partials/fontello';

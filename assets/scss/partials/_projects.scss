@@ -9,8 +9,7 @@
 
 // Project
 .project {
-    max-width: 30rem;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
     border: .1rem solid $faint;
     color: $body-color;
     transition: all 250ms ease-in-out;
@@ -18,7 +17,7 @@
 
 .project:hover,
 .project:focus {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     border-bottom-width: .5rem;
     border-bottom-color: $blue;
     color: $body-color;
