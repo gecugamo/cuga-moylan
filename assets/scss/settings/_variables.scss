@@ -4,29 +4,9 @@
 
 /* Colors */
 $charcoal: #353535;
-$sharkskin: #666;
-$acid: #446669;
 $faint: #ddd;
-$mist: #bbb;
 $blue: #284587;
-$violet: #CA4F2B;
-$tan: #CA952B;
 $green: #1F8F53;
-$red: #DC143C;
-$light-blue: lighten($blue, 25%);
-$light-violet: lighten($violet, 25%);
-$light-tan: lighten($tan, 25%);
-$light-green: lighten($green, 25%);
-$carribean: #083A73;
-$manta-ray: #1A7979;
-
-/* Breakpoints */
-$screen-xs-min: 'only screen and (min-width: 480px)';
-$screen-sm-min: 'only screen and (min-width: 768px)';
-$screen-md-min: 'only screen and (min-width: 992px)';
-$screen-lg-min: 'only screen and (min-width: 1200px)';
-$screen-xl-min: 'only screen and (min-width: 1500px)';
-$screen-xl-h-v-min: 'only screen and (min-width: 1500px) and (min-height: 900px)';
 
 /* Typography */
 $heading-color: $charcoal;
@@ -39,3 +19,14 @@ $body-font-family: 'Oxygen', sans-serif;
 $body-font-size: 1.6rem;
 $body-font-weight: 400;
 $body-line-height: 1.6;
+
+
+/* Grid */
+// Set the breakpoint at which the columns stack
+$breakpoint: 640px;
+
+// Container width
+$container-width: 960px;
+
+// Set the gutter width
+$gutter-width: 30px;

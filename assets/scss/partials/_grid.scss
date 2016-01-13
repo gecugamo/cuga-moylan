@@ -1,29 +1,6 @@
-// ********* 
-// VARIABLES
-// *********
-
-// Set the breakpoint at which the columns stack
-$breakpoint: 640px;
-
-// Container width
-$container-width: 960px;
-
-// Set the gutter width
-$gutter-width: 20px;
-
-
-/**********/
-/** GRID **/
-/**********/
-
-// Allows border and padding to be calculated
-// in elements' dimensions
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
+/*
+ * Grid
+ *****************************************************************************************************************************/
 // Full width on screens below 1000px, 960px on screens above
 .container {
   margin-right: auto;
@@ -49,14 +26,16 @@ $gutter-width: 20px;
 // our columns automatically size themselves
 .column {
     position: relative;
-    flex: 1 0 100%;
+    flex: 1 0 auto;
     max-width: 100%; // Fallback for browsers that don't support calc
     max-width: calc(100% - #{$gutter-width});
     min-height: 1px;
     margin-right: $gutter-width / 2;
     margin-left: $gutter-width / 2;
+}
 
-  @media only screen and (min-width: $breakpoint) {
-    flex-basis: 0;
-  }
+.layout {
+    @extend .container;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
 }

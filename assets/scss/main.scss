@@ -7,19 +7,15 @@
 @import 'settings/reset';
 @import 'settings/variables';
 
-@import 'partials/utilities';
 @import 'partials/base';
 @import 'partials/grid';
 @import 'partials/typography';
-@import 'partials/animations';
-@import 'partials/nav';               
+@import 'partials/images';
+@import 'partials/buttons';
+@import 'partials/animations';               
+@import 'partials/fontello';
 @import 'partials/hero';
 @import 'partials/footer';
-@import 'partials/forms';
-@import 'partials/buttons';
-@import 'partials/layout';
+@import 'partials/scroll';
 @import 'partials/projects';
 @import 'partials/modal';
-@import 'partials/skills';
-@import 'partials/contact-card';
-@import 'partials/fontello';

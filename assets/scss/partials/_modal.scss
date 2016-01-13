@@ -21,7 +21,7 @@
 	margin: 1.5rem;
 	background-color: #fff;
 	
-	@media #{$screen-sm-min} {
+	@media only screen and (min-width: $breakpoint) {
 		width: 60rem;
 		margin: 3rem auto;
 	}
@@ -39,6 +39,7 @@
 	color: #fff;
 	background-color: $blue;
 	font: {
+		family: $heading-font-family;
 		size: 1.8rem;
 		weight: $heading-font-weight;
 	};
@@ -61,33 +62,33 @@
 }
 
 .modal__body {
-	padding: 2rem 1rem;
-	
-	&::after {
-		display: table;
-		content: ' ';
-		clear: both;
-		
-	}
-}
-
-.modal__info,
-.modal__code_example {
-	width: 50%;
-	float: left;
-	padding-right: 1rem;
-	padding-left: 1rem;
+	@extend .row;
+	padding: 1.5rem;
 }
 
 .modal__img {
 	@extend .img-responsive;
 	margin-bottom: 1rem;
+	border: 1px solid $faint;
 }
 
-pre {
+.modal__info,
+.modal__code-wrap {
+	@extend .column;
+}
+
+.modal__code-wrap {
+	display: none;
+
+	@media only screen and (min-width: $breakpoint) {
+		display: block;
+	}
+}
+
+.modal__code {
 	border: 1px solid $blue;
-	border-left-width: 10px;
-	padding: 10px;
+	border-left-width: 1rem;
+	padding: 1rem;
 	font-family: 'Monaco', monospace;
 	font-size: 1.2rem;
 	overflow: auto;

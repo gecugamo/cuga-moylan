@@ -15,7 +15,7 @@
         <header class="hero">
             <div class="hero__content">
                 <h1 class="hero__name">gary cuga-moylan</h1>
-                <p>Front-end Web Developer</p>
-                <a class="layout__scroll" href="#0" data-scroll="#work"><i class="icon-angle-double-down"></i></a>
+                <p class="hero__title">Front-end Web Developer</p>
+                <a class="scroll" href="#0" data-scroll="#work"><i class="icon-angle-double-down"></i></a>
             </div>
         </header>

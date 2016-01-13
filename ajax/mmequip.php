@@ -11,8 +11,8 @@
 				<p class="modal__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laborum aspernatur? Nihil dicta labore, voluptate cumque.</p>
 				<a class="btn small" href="http://mmequip.telegraphicsinc.com" target="_blank">Visit Site</a>
 			</div>
-			<div class="modal__code_example">
-<pre><code>@keyframes burst {
+			<div class="modal__code-wrap">
+<pre class="modal__code"><code>@keyframes burst {
   0%, 100% {
     transform: scale(1);
   }

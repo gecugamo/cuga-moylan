@@ -17,24 +17,17 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
 
-    * {
-        color: #fff;
-    }
+.hero__name,
+.hero__title {
+    color: #fff;
 }
 
 .hero__name {
     font-family: $heading-font-family;
 
-    @media #{$screen-xs-min} {
-        font-size: 5.6rem;
-    }
-
-    @media #{$screen-sm-min} {
-        font-size: 6.4rem;
-    }
-
-    @media #{$screen-md-min} {
+    @media only screen and (min-width: $breakpoint) {
         font-size: 7.6rem;
     }
 }

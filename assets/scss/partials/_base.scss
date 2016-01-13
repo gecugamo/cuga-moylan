@@ -1,7 +1,7 @@
 /*
- * 2.0 Base
+ * Base
  *****************************************************************************************************************************/
-/* Apply border box globally */
+
 *,
 *::before,
 *::after {
@@ -9,7 +9,6 @@
   outline: 0;
 }
 
-/* Set root font size to 10px for easy manipulation with rem units */
 html {
   font-size: 62.5%;
 }
@@ -31,7 +30,6 @@ body {
     background-color: #fff;
 }
 
-/* Headings */
 h1,
 h2,
 h3,
@@ -72,25 +70,22 @@ h6 {
   font-size: 1.6rem;
 }
 
-/* Paragraphs */
 p {
   margin-bottom: 2rem;
 }
 
-/* Links */
 a {
-  color: $light-blue;
+  color: $blue;
   text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: lighten($blue, 25%);
-    outline: 0;
-    text-decoration: underline;
-  }
 }
 
-/* Text selection */
+a:hover,
+a:focus {
+  color: lighten($blue, 25%);
+  outline: 0;
+  text-decoration: underline;
+}
+
 ::selection {
   color: #fff;
   background: $charcoal;

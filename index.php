@@ -13,7 +13,7 @@
                         <h4>lrstyle.com</h4>
                         <table class="project__info">
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Team:
                                 </td>
                                 <td>
@@ -21,7 +21,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Work:
                                 </td>
                                 <td>
@@ -43,7 +43,7 @@
                         <h4>mmequip.com</h4>
                         <table class="project__info">
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Team:
                                 </td>
                                 <td>
@@ -51,7 +51,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Work:
                                 </td>
                                 <td>
@@ -73,7 +73,7 @@
                         <h4>customledgers.com</h4>
                         <table class="project__info">
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Team:
                                 </td>
                                 <td>
@@ -81,7 +81,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Work:
                                 </td>
                                 <td>
@@ -95,8 +95,6 @@
                     </span>
                 </a>
             </div><!-- /.column -->
-        </div><!-- /.row -->
-        <div class="row">
             <div class="column">
                 <a class="project" href="youthspecialties">
                         <img class="project__img" src="assets/img/youthspecialties_2.jpg" alt="Screenshot from youthspecialties.com" />
@@ -104,7 +102,7 @@
                         <h4>youthspecialties.com</h4>
                         <table class="project__info">
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Team:
                                 </td>
                                 <td>
@@ -112,7 +110,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Work:
                                 </td>
                                 <td>
@@ -134,7 +132,7 @@
                         <h4>coveredaffairs.com</h4>
                         <table class="project__info">
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Team:
                                 </td>
                                 <td>
@@ -142,7 +140,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Work:
                                 </td>
                                 <td>
@@ -164,7 +162,7 @@
                         <h4>acmweb.com</h4>
                         <table class="project__info">
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Team:
                                 </td>
                                 <td>
@@ -172,7 +170,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Work:
                                 </td>
                                 <td>
@@ -187,8 +185,6 @@
                     </span>
                 </a>
             </div><!-- /.column -->
-        </div><!-- /.row -->
-        <div class="row">
             <div class="column">
                 <a class="project" href="go4dna">
                         <img class="project__img" src="assets/img/go4dna_2.jpg" alt="Screenshot from go4dna.com" />
@@ -196,7 +192,7 @@
                         <h4>go4dna.com</h4>
                         <table class="project__info">
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Team:
                                 </td>
                                 <td>
@@ -204,7 +200,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Work:
                                 </td>
                                 <td>
@@ -226,7 +222,7 @@
                         <h4>cuga-moylan.com</h4>
                         <table class="project__info">
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Team:
                                 </td>
                                 <td>
@@ -234,7 +230,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Work:
                                 </td>
                                 <td>
@@ -255,7 +251,7 @@
                         <h4>marshajones.com</h4>
                         <table class="project__info">
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Team:
                                 </td>
                                 <td>
@@ -263,7 +259,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="project__table-head">
                                     Work:
                                 </td>
                                 <td>

@@ -3,12 +3,12 @@
     'use strict';                                                               // Enable strict mode// Project modal
 
     $('body').on('click', '.project', function(e) {
-            e.preventDefault();
-            modal.open($(this));
+        e.preventDefault();
+        modal.open($(this));
     });
 
     $('body').on('click', '.modal__close, .modal__overlay', function(e) {
-        e.preventDefault();
+        e.stopPropagation();
         modal.close();
     });
 

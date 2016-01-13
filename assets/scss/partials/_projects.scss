@@ -7,8 +7,8 @@
     display: block;
 }
 
-// Project
 .project {
+    width: 300px;
     margin: 0 auto 2rem;
     border: .1rem solid $faint;
     color: $body-color;
@@ -25,39 +25,21 @@
     transform: translateY(-.5rem);
 }
 
-.flex-item:nth-child(2n) .project:hover,
-.flex-item:nth-child(2n) .project:focus {
-    border-bottom-color: $violet;
-}
-
-.flex-item:nth-child(3n) .project:hover,
-.flex-item:nth-child(3n) .project:focus {
-    border-bottom-color: $green;
-}
-
-.flex-item:nth-child(4n) .project:hover,
-.flex-item:nth-child(4n) .project:focus {
-    border-bottom-color: $tan;
-}
-
-// Project Img
 .project__img {
     max-width: 100%;
     height: auto;
 }
 
-// Project Body
 .project__body {
     border-top: .1rem solid $faint;
     padding: 2rem;
 }
 
-// Project Info
 .project__info {
     font-size: 1.6rem;
 }
 
-.project__info td:first-child {
+.project__table-head {
     padding-right: 1rem;
     font-weight: 700;
 }
