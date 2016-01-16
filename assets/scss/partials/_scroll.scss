@@ -11,7 +11,8 @@
     animation: up-down 2.5s ease-in-out infinite;
 }
 
-.scroll:hover {
+.scroll:hover,
+.scroll:focus {
     color: #fff;
 }
 

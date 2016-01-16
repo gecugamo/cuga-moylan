@@ -1,0 +1,97 @@
+/*
+ * Nav
+ *****************************************************************************************************************************/
+ .nav-wrap {
+   position: relative;
+ }
+
+ .nav {
+   position: fixed;
+   z-index: 1000;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   border-top: 1px solid $faint;
+   background-color: #fff;
+   transition: background-color 250ms ease-in-out;
+}
+
+.nav--absolute {
+  position: absolute;
+}
+
+.nav__links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  height: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 40px;
+
+  @media only screen and (min-width: 990px) {
+    width: 960px;
+  }
+}
+
+.nav__link {
+	display: block;
+	flex: 1;
+  color: $charcoal;
+	text-decoration: none;
+}
+
+.nav__link:not(:last-child) {
+	border-right: 1px solid $faint;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #fff;
+	background-color: $charcoal;
+  text-decoration: none;
+}
+
+.nav__link::before {
+	font-family: 'fontello';
+}
+
+.nav__link--email::before {
+	content: '\f003';
+}
+
+.nav__link--github::before {
+	content: '\e808';
+}
+
+.nav__link--codepen::before {
+	content: '\e809';
+}
+
+.nav__link--linkedin::before {
+	content: '\e807';
+}
+
+@media only screen and (min-width: 990px) {
+	.nav__link::before {
+		margin-right: 10px;
+	}
+
+	.nav__link--email::after {
+		content: 'Email';
+	}
+
+	.nav__link--github::after {
+		content: 'Github';
+	}
+
+	.nav__link--codepen::after {
+		content: 'Codepen';
+	}
+
+	.nav__link--linkedin::after {
+		content: 'Linkedin';
+	}
+}
