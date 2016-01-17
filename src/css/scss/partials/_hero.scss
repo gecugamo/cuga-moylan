@@ -2,8 +2,8 @@
  * Hero
  *****************************************************************************************************************************/
 .hero {
-    height: 100rem;
-    height: calc(100vh - 3rem);
+    height: 500px;
+    height: calc(100vh - 30px);
     background: $blue;
     background-image:
     linear-gradient(to right, $blue, $green);
@@ -11,8 +11,8 @@
     background-size: cover;
     text-align: center;
 
-    @media only screen and (min-width: $breakpoint) {
-          height: calc(100vh - 6rem);
+    @media only screen and (min-width: $breakpoint-sm) {
+          height: calc(100vh - 45px);
     }
 }
 
@@ -31,7 +31,23 @@
 .hero__name {
     font-family: $heading-font-family;
 
-    @media only screen and (min-width: $breakpoint) {
+    @media only screen and (min-width: $breakpoint-sm) {
+        font-size: 4.4rem;
+    }
+
+    @media only screen and (min-width: $breakpoint-md) {
+        font-size: 5.8rem;
+    }
+
+    @media only screen and (min-width: $breakpoint-lg) {
         font-size: 7.6rem;
     }
+}
+
+.hero__title {
+  font-size: 1.4rem;
+
+  @media only screen and (min-width: $breakpoint-sm) {
+      font-size: 1.6rem;
+  }
 }

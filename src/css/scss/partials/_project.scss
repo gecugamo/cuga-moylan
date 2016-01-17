@@ -1,5 +1,5 @@
 /*
- * Projects
+ * Project
  *****************************************************************************************************************************/
 .project,
 .project__img,
@@ -8,38 +8,35 @@
 }
 
 .project {
-    width: 300px;
-    margin: 0 auto 2rem;
-    border: .1rem solid $faint;
+    max-width: 300px;
+    margin: 0 auto 30px;
+    border: 1px solid $faint;
     color: $body-color;
     transition: all 250ms ease-in-out;
 }
 
 .project:hover,
 .project:focus {
-    margin-bottom: 1.5rem;
-    border-bottom-width: .5rem;
+    margin-bottom: 25px;
+    border-bottom-width: 5px;
     border-bottom-color: $blue;
     color: $body-color;
     text-decoration: none;
-    transform: translateY(-.5rem);
+    transform: translateY(-5px);
 }
 
 .project__img {
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .project__body {
-    border-top: .1rem solid $faint;
-    padding: 2rem;
-}
-
-.project__info {
-    font-size: 1.6rem;
+    border-top: 1px solid $faint;
+    padding: 20px;
 }
 
 .project__table-head {
-    padding-right: 1rem;
+    padding-right: 10px;
     font-weight: 700;
 }

@@ -1,0 +1,66 @@
+/*
+ * Layout
+ *****************************************************************************************************************************/
+
+// Container width
+$container-width-sm: 630px;
+$container-width-md: 960px;
+
+// Set the gutter width
+$gutter-width: 30px;
+
+// Full width on screens below 1000px, 960px on screens above
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gutter-width / 2;
+  padding-left: $gutter-width / 2;
+
+  @media only screen and (min-width: $breakpoint-sm) {
+    width: $container-width-sm + $gutter-width;
+  }
+
+  @media only screen and (min-width: $breakpoint-md) {
+    width: $container-width-md + $gutter-width;
+  }
+}
+
+.row {
+    position: relative;
+    margin-right: $gutter-width / -2;
+    margin-left:  $gutter-width / -2;
+    overflow: hidden;
+}
+
+.column {
+    position: relative;
+    float: left;
+    width: calc(100% - #{$gutter-width});
+    min-height: 1px;
+    margin-right: $gutter-width / 2;
+    margin-left: $gutter-width / 2;
+
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1) {
+      width: calc(50% - #{$gutter-width});
+      &:nth-child(2n + 1) {
+        clear: both;
+      }
+    }
+
+    @media only screen and (min-width: $breakpoint-md) {
+      width: calc(33.333333% - #{$gutter-width});
+      &:nth-child(3n + 1) {
+        clear: both;
+      }
+    }
+}
+
+.layout {
+    @extend .container;
+    padding-top: 80px;
+    padding-bottom: 90px;
+
+    @media only screen and (min-width: $breakpoint-md) {
+      padding-bottom: 110px;
+    }
+}

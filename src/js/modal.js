@@ -7,8 +7,8 @@
         modal.open($(this));
     });
 
-    $('body').on('click', '.modal__close, .modal__overlay', function(e) {
-        e.stopPropagation();
+    $('body').on('click', '.modal__close', function(e) {
+        e.preventDefault();
         modal.close();
     });
 

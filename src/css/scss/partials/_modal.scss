@@ -18,82 +18,72 @@
 .modal {
 	position: relative;
 	z-index: 200;
-	max-width: 50rem;
-	margin: 1.5rem auto;
+	max-width: 500px;
+	margin: 15px auto;
 	background-color: #fff;
 
-	@media only screen and (min-width: $breakpoint) {
-		margin-top: 3rem;
-		margin-bottom: 3rem;
+	@media only screen and (min-width: $breakpoint-md) {
+		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 }
 
 .modal__content {
 	position: relative;
 	z-index: 150;
-	padding-right: 1.5rem;
-	padding-left: 1.5rem;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.modal__info {
+	margin-bottom: 10px;
+}
+
+.modal__table-head {
+	@extend .project__table-head;
 }
 
 .modal__header {
 	position: relative;
-	border-bottom: .1rem solid #ddd;
-	padding: 1.5rem;
+	border-bottom: 1px solid $faint;
+	padding: 15px;
 	color: #fff;
 	background-color: $blue;
-	font: {
-		family: $heading-font-family;
-		size: 1.8rem;
-		weight: $heading-font-weight;
-	};
+}
+
+.modal__heading {
+	margin: 0;
+	color: #fff;
 }
 
 .modal__close {
 	display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: 1.5rem;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 	color: #fff;
+	font-weight: 700;
 	text-decoration: none;
 
-	&:hover,
-	&:focus {
-		color: #fff;
-		text-decoration: none;
-	}
+}
+
+.modal__close:hover,
+.modal__close:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+.modal__close::before {
+	content: 'X';
 }
 
 .modal__body {
-	@extend .row;
-	padding: 1.5rem;
+	padding: 15px;
 }
 
 .modal__img {
-	@extend .img-responsive;
+	@extend .project__img;
 	margin-bottom: 1rem;
 	border: 1px solid $faint;
-}
-
-.modal__info,
-.modal__code-wrap {
-	@extend .column;
-}
-
-.modal__code-wrap {
-	display: none;
-
-	@media only screen and (min-width: $breakpoint) {
-		display: block;
-	}
-}
-
-.modal__code {
-	border: 1px solid $blue;
-	border-left-width: 1rem;
-	padding: 1rem;
-	font-family: 'Monaco', monospace;
-	font-size: 1.2rem;
-	overflow: auto;
-	tab-size: 2;
 }

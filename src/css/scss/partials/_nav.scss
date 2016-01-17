@@ -11,9 +11,14 @@
    bottom: 0;
    left: 0;
    right: 0;
+   height: 32px;
    border-top: 1px solid $faint;
+   border-bottom: 1px solid $faint;
    background-color: #fff;
-   transition: background-color 250ms ease-in-out;
+
+   @media only screen and (min-width: $breakpoint-sm) {
+     height: 47px;
+   }
 }
 
 .nav--absolute {
@@ -27,14 +32,14 @@
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  height: 3rem;
+  height: 30px;
   margin-right: auto;
   margin-left: auto;
-  line-height: 3rem;
+  line-height: 30px;
 
-  @media only screen and (min-width: $breakpoint) {
-    height: 6rem;
-    line-height: 6rem;
+  @media only screen and (min-width: $breakpoint-sm) {
+    height: 45px;
+    line-height: 45px;
   }
 }
 
@@ -76,7 +81,7 @@
 	content: '\f0e1';
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: $breakpoint-sm) {
 	.nav__link::before {
 		margin-right: 10px;
 	}

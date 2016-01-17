@@ -34,19 +34,20 @@ module.exports = function(grunt) {
       }
     },
     browserSync: {
-        dev: {
-            bsFiles: {
-                src: [
-                  'dist/css/app.min.css',
-                  '*.php',
-                  '**/*.php'
-                ]
-            },
-            options: {
-                watchTask: true,
-                proxy: 'cuga-moylan.dev'
-            }
-        }
+      dev: {
+          bsFiles: {
+              src: [
+                '*.php',
+                '**/*.php',
+                'dist/css/app.min.css',
+                'dist/js/app.min.js'
+              ]
+          },
+          options: {
+              watchTask: true,
+              proxy: 'cuga-moylan.dev'
+          }
+      }
     },
     watch: {
       grunt: {

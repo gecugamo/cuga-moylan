@@ -2,8 +2,8 @@
 <div id="modal__cuga-moylan" class="modal__content">
 	<div class="modal">
 		<header class="modal__header">
-				cuga-moylan.com
-				<a class="modal__close" href="#0">x</a>
+				<h4 class="modal__heading">cuga-moylan.com</h4>
+				<a class="modal__close" href="#0"></a>
 		</header>
 		<div class="modal__body">
 			<div class="modal__info">

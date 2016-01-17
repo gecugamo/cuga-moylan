@@ -6,13 +6,10 @@
     position: relative;
     z-index: 1;
     border: 1px solid $charcoal;
-    padding: 1.5rem 3rem;
+    padding: 15px 30px;
     color: $charcoal;
     background-color: #fff;
-    font: {
-        family: $heading-font-family;
-        size: 1.6rem;
-    };
+    font: 1.6rem $heading-font-family;
     text-transform: lowercase;
     transition: all 250ms ease-in-out;
 }
@@ -38,12 +35,13 @@
     transition: all 250ms ease-in-out;
 }
 
-.btn:hover::before {
+.btn:hover::before,
+.btn:focus::before {
     transform: scale(1);
     opacity: 1;
 }
 
 
 .btn.small {
-    padding: .5rem 2rem;
+    padding: 5px 20px;
 }

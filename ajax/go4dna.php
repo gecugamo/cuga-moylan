@@ -2,8 +2,8 @@
 <div id="modal__go4dna" class="modal__content">
 	<div class="modal">
 		<header class="modal__header">
-				go4dna.com
-				<a class="modal__close" href="#0">x</a>
+				<h4 class="modal__heading">go4dna.com</h4>
+				<a class="modal__close" href="#0"></a>
 		</header>
 		<div class="modal__body">
 			<div class="modal__info">
