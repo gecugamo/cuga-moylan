@@ -7,6 +7,7 @@
 
         <meta name="description" content="Portfolio of Chicago based Front-End Web Developer, Gary Cuga-Moylan">
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
 
         <script src="assets/js/modernizr.js"></script>

@@ -3,13 +3,17 @@
  *****************************************************************************************************************************/
 .hero {
     height: 100rem;
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 3rem);
     background: $blue;
     background-image:
-    linear-gradient(115deg, $blue, $green);
+    linear-gradient(to right, $blue, $green);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+
+    @media only screen and (min-width: $breakpoint) {
+          height: calc(100vh - 6rem);
+    }
 }
 
 .hero__content {
