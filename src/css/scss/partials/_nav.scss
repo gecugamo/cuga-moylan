@@ -48,6 +48,7 @@
 	flex: 1;
   color: $charcoal;
 	text-decoration: none;
+  transition: all 250ms ease-in-out;
 }
 
 .nav__link:not(:last-child) {
