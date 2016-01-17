@@ -13,9 +13,6 @@
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="assets/js/debounce.js"></script>
-        <script src="assets/js/modal.js"></script>
-        <script src="assets/js/scroll.js"></script>
-        <script src="assets/js/nav.js"></script>
+        <script src="dist/js/app.min.js"></script>
     </body>
 </html>

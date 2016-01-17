@@ -7,7 +7,7 @@
 		</header>
 		<div class="modal__body">
 			<div class="modal__info">
-				<img class="modal__img" src="assets/img/youthspecialties_2.jpg" alt="Screenshot from youthspecialties.com" />
+				<img class="modal__img" src="img/youthspecialties_2.jpg" alt="Screenshot from youthspecialties.com" />
 				<p class="modal__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laborum aspernatur? Nihil dicta labore, voluptate cumque.</p>
 				<a class="btn small" href="http://youthspecialties.com" target="_blank">Visit Site</a>
 			</div>

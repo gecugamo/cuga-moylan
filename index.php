@@ -8,7 +8,7 @@
         <div class="row">
             <div class="column">
                 <a class="project" href="lrstyle">
-                        <img class="project__img" src="assets/img/lr_style_2.jpg" alt="Screenshot from lrstyle.com" />
+                        <img class="project__img" src="img/lr_style_2.jpg" alt="Screenshot from lrstyle.com" />
                     <span class="project__body">
                         <h4>lrstyle.com</h4>
                         <table class="project__info">
@@ -38,7 +38,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="mmequip">
-                        <img class="project__img" src="assets/img/mmequip_2.jpg" alt="Screenshot from mmequip.com" />
+                        <img class="project__img" src="img/mmequip_2.jpg" alt="Screenshot from mmequip.com" />
                     <span class="project__body">
                         <h4>mmequip.com</h4>
                         <table class="project__info">
@@ -68,7 +68,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="customledgers">
-                        <img class="project__img" src="assets/img/customledgers_2.jpg" alt="Screenshot from customledgers.com" />
+                        <img class="project__img" src="img/customledgers_2.jpg" alt="Screenshot from customledgers.com" />
                     <span class="project__body">
                         <h4>customledgers.com</h4>
                         <table class="project__info">
@@ -97,7 +97,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="youthspecialties">
-                        <img class="project__img" src="assets/img/youthspecialties_2.jpg" alt="Screenshot from youthspecialties.com" />
+                        <img class="project__img" src="img/youthspecialties_2.jpg" alt="Screenshot from youthspecialties.com" />
                     <span class="project__body">
                         <h4>youthspecialties.com</h4>
                         <table class="project__info">
@@ -127,7 +127,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="coveredaffairs">
-                        <img class="project__img" src="assets/img/coveredaffairs_2.jpg" alt="Screenshot from coveredaffairs.com" />
+                        <img class="project__img" src="img/coveredaffairs_2.jpg" alt="Screenshot from coveredaffairs.com" />
                     <span class="project__body">
                         <h4>coveredaffairs.com</h4>
                         <table class="project__info">
@@ -157,7 +157,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="acmweb">
-                        <img class="project__img" src="assets/img/acmweb_2.jpg" alt="Screenshot from acmweb.com" />
+                        <img class="project__img" src="img/acmweb_2.jpg" alt="Screenshot from acmweb.com" />
                     <span class="project__body">
                         <h4>acmweb.com</h4>
                         <table class="project__info">
@@ -187,7 +187,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="go4dna">
-                        <img class="project__img" src="assets/img/go4dna_2.jpg" alt="Screenshot from go4dna.com" />
+                        <img class="project__img" src="img/go4dna_2.jpg" alt="Screenshot from go4dna.com" />
                     <span class="project__body">
                         <h4>go4dna.com</h4>
                         <table class="project__info">
@@ -217,7 +217,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="cuga-moylan">
-                        <img class="project__img" src="assets/img/cuga-moylan_2.jpg" alt="Screenshot from wedding website" />
+                        <img class="project__img" src="img/cuga-moylan_2.jpg" alt="Screenshot from wedding website" />
                     <span class="project__body">
                         <h4>cuga-moylan.com</h4>
                         <table class="project__info">
@@ -246,7 +246,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="cuga-moylan">
-                        <img class="project__img" src="assets/img/cuga-moylan_2.jpg" alt="Screenshot from wedding website" />
+                        <img class="project__img" src="img/cuga-moylan_2.jpg" alt="Screenshot from wedding website" />
                     <span class="project__body">
                         <h4>marshajones.com</h4>
                         <table class="project__info">

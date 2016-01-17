@@ -3,11 +3,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     sass: {
       dist: {
-        options: {
-          sourcemap: 'none'
-        },
         files: {
-          'style.css': 'assets/scss/main.scss'
+          'dist/css/app.min.css': 'src/css/scss/main.scss'
         }
       }
     },
@@ -21,14 +18,26 @@ module.exports = function(grunt) {
         ]
       },
       dist: {
-        src: 'style.css'
+        src: 'dist/css/app.min.css'
+      }
+    },
+    uglify: {
+      my_target: {
+        files: {
+          'dist/js/app.min.js': [
+            'src/js/debounce.js',
+            'src/js/modal.js',
+            'src/js/scroll.js',
+            'src/js/nav.js'
+          ]
+        }
       }
     },
     browserSync: {
         dev: {
             bsFiles: {
                 src: [
-                  'style.css',
+                  'dist/css/app.min.css',
                   '*.php',
                   '**/*.php'
                 ]
@@ -48,18 +57,27 @@ module.exports = function(grunt) {
       },
       css: {
         files: [
-          'assets/scss/*.scss',
-          'assets/scss/**/*.scss'
+          'src/css/scss/*.scss',
+          'src/css/scss/**/*.scss'
         ],
         tasks: [
           'sass',
           'postcss'
+        ]
+      },
+      js: {
+        files: [
+          'src/js/*.js'
+        ],
+        tasks: [
+          'uglify'
         ]
       }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('default', ['browserSync', 'watch']);
