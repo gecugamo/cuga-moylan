@@ -29,8 +29,8 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laborum aspernatur? Nihil dicta labore, voluptate cumque.</p>
-				<a class="btn small" href="http://coveredaffairs.telegraphicsinc.com" target="_blank">Visit Site</a>
+				<p class="modal__summary">Covered Affairs supplies custom and rental linens for special events.</p>
+				<a class="btn small" href="http://coveredaffairs.martinchicago.com/" target="_blank">Visit Site</a>
 		</div>
 	</div>
 </div>

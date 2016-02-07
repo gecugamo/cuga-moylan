@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Gary Cuga-Moylan's Portfolio</title>

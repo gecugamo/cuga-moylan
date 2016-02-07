@@ -12,8 +12,8 @@
    left: 0;
    right: 0;
    height: 32px;
-   border-top: 1px solid $faint;
-   border-bottom: 1px solid $faint;
+   border-top: 1px solid $border-color;
+   border-bottom: 1px solid $border-color;
    background-color: #fff;
 
    @media only screen and (min-width: $breakpoint-sm) {
@@ -46,13 +46,13 @@
 .nav__link {
 	display: block;
 	flex: 1;
-  color: $charcoal;
+  color: $font-color-primary;
 	text-decoration: none;
   transition: all 250ms ease-in-out;
 }
 
 .nav__link:not(:last-child) {
-	border-right: 1px solid $faint;
+	border-right: 1px solid $border-color;
 }
 
 .nav__link:hover,

@@ -4,9 +4,9 @@
 .hero {
     height: 500px;
     height: calc(100vh - 30px);
-    background: $blue;
+    background: $theme-primary;
     background-image:
-    linear-gradient(to right, $blue, $green);
+    linear-gradient(to right, $theme-primary, $theme-secondary);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -29,6 +29,7 @@
 }
 
 .hero__name {
+    margin-top: 0;
     font-family: $heading-font-family;
 
     @media only screen and (min-width: $breakpoint-sm) {

@@ -29,7 +29,7 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">LR Style is a lifestyle blog. Highlights include a custom single-post template that allows users to create posts with unique layouts.</p>
+				<p class="modal__summary">LR Style is a lifestyle blog, with topics including fashion, gift ideas, and home decorating tips.</p>
 				<a class="btn small" href="http://lrstyle.us" target="_blank">Visit Site</a>
 		</div>
 	</div>

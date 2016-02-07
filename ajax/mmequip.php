@@ -29,7 +29,7 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">M &amp; M Equipment supplies reconditioned industrial processing and packaging equipment. Highlights a custom catalog for listing their products.</p>
+				<p class="modal__summary">M &amp; M Equipment supplies reconditioned industrial processing and packaging equipment.</p>
 				<a class="btn small" href="http://mmequip.com" target="_blank">Visit Site</a>
 		</div>
 	</div>

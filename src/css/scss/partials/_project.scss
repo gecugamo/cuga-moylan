@@ -10,7 +10,7 @@
 .project {
     max-width: 300px;
     margin: 0 auto 30px;
-    border: 1px solid $faint;
+    border: 1px solid $border-color;
     color: $body-color;
     transition: all 250ms ease-in-out;
 }
@@ -19,11 +19,16 @@
 .project:focus {
     margin-bottom: 25px;
     border-bottom-width: 5px;
-    border-bottom-color: $blue;
+    border-bottom-color: $theme-primary;
     color: $body-color;
     text-decoration: none;
     transform: translateY(-5px);
+
+    .column:nth-child(even) & {
+        border-bottom-color: $theme-secondary;
+    }
 }
+
 
 .project__img {
   display: block;
@@ -32,8 +37,12 @@
 }
 
 .project__body {
-    border-top: 1px solid $faint;
+    border-top: 1px solid $border-color;
     padding: 20px;
+}
+
+.project__name {
+    margin-top: 0;
 }
 
 .project__table-head {

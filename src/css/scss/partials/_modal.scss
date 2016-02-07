@@ -39,16 +39,20 @@
 	margin-bottom: 10px;
 }
 
+.modal__summary {
+	margin-top: 0;
+}
+
 .modal__table-head {
 	@extend .project__table-head;
 }
 
 .modal__header {
 	position: relative;
-	border-bottom: 1px solid $faint;
+	border-bottom: 1px solid $border-color;
 	padding: 15px;
 	color: #fff;
-	background-color: $blue;
+	background-color: $theme-primary;
 }
 
 .modal__heading {
@@ -85,5 +89,5 @@
 .modal__img {
 	@extend .project__img;
 	margin-bottom: 1rem;
-	border: 1px solid $faint;
+	border: 1px solid $border-color;
 }

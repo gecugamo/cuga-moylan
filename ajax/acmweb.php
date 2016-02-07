@@ -29,7 +29,7 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laborum aspernatur? Nihil dicta labore, voluptate cumque.</p>
+				<p class="modal__summary">ACM Community Management provides high quality managament services for homeowners.</p>
 				<a class="btn small" href="http://acmweb.com" target="_blank">Visit Site</a>
 		</div>
 	</div>

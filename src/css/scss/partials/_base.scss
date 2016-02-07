@@ -37,6 +37,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 20px;
   margin-bottom: 20px;
   color: $heading-color;
   font: {
@@ -72,22 +73,23 @@ h6 {
 }
 
 p {
+    margin-top: 20px;
   margin-bottom: 20px;
 }
 
 a {
-  color: $blue;
+  color: $theme-primary;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: lighten($blue, 25%);
+  color: lighten($theme-primary, 25%);
   outline: 0;
   text-decoration: underline;
 }
 
 ::selection {
   color: #fff;
-  background: $charcoal;
+  background: $font-color-primary;
 }

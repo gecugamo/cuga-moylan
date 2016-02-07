@@ -29,7 +29,7 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary"></p>
+				<p class="modal__summary">Youth Specialties provides youth ministry training and resources to churches.</p>
 				<a class="btn small" href="http://youthspecialties.com" target="_blank">Visit Site</a>
 		</div>
 	</div>

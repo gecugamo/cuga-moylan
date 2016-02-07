@@ -28,7 +28,7 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">Ledgers, Inc. provides accounting services for small businesses. This is a single page site which I both designed and developed. I also used subtle CSS animations to add some movement to the site.</p>
+				<p class="modal__summary">Ledgers, Inc. provides accounting services for small businesses.</p>
 				<a class="btn small" href="http://staging.customledgers.com" target="_blank">Visit Site</a>
 		</div>
 	</div>

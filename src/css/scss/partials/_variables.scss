@@ -3,18 +3,19 @@
  *****************************************************************************************************************************/
 
 /* Colors */
-$charcoal: #353535;
-$faint: #ddd;
-$blue: #284587;
-$green: #1F8F53;
+$font-color-primary: #353535;
+$border-color: #ddd;
+$theme-primary: #284587;
+$theme-secondary: #1F8F53;
+$theme-tertiary: #D2AF2D;
 
 /* Typography */
-$heading-color: $charcoal;
+$heading-color: $font-color-primary;
 $heading-font-family: 'Oswald', sans-serif;
 $heading-font-weight: 400;
 $heading-line-height: 1.4;
 
-$body-color: $charcoal;
+$body-color: $font-color-primary;
 $body-font-family: 'Oxygen', sans-serif;
 $body-font-size: 1.6rem;
 $body-font-weight: 400;
