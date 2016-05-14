@@ -63,23 +63,23 @@
 }
 
 .nav__link::before {
-	font-family: 'FontAwesome';
+	font-family: 'fontello';
 }
 
 .nav__link--email::before {
-	content: '\f003';
+	content: '\e803';
 }
 
 .nav__link--github::before {
-	content: '\f09b';
+	content: '\e802';
 }
 
 .nav__link--codepen::before {
-	content: '\f1cb';
+	content: '\e800';
 }
 
 .nav__link--linkedin::before {
-	content: '\f0e1';
+	content: '\e801';
 }
 
 @media only screen and (min-width: $breakpoint-sm) {
