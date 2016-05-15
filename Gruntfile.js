@@ -25,10 +25,8 @@ module.exports = function(grunt) {
       my_target: {
         files: {
           'dist/js/app.min.js': [
-            'src/js/debounce.js',
             'src/js/modal.js',
-            'src/js/scroll.js',
-            'src/js/nav.js'
+            'src/js/scroll.js'
           ]
         }
       }

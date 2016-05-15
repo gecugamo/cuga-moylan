@@ -28,7 +28,12 @@ p {
 }
 
 body {
+    padding-bottom: 32px;
     background-color: #fff;
+
+	@media only screen and (min-width: $breakpoint-sm) {
+        padding-bottom: 47px;
+    }
 }
 
 h1,
