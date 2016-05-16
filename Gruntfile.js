@@ -1,6 +1,16 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    penthouse: {
+        extract : {
+            outfile : 'dist/css/crit.css',
+            css : 'dist/css/app.min.css',
+            url : 'http://localhost:3000',
+            width : 1300,
+            height : 900,
+            skipErrors : false // this is the default
+        },
+      },
     sass: {
       dist: {
         files: {
@@ -25,10 +35,8 @@ module.exports = function(grunt) {
       my_target: {
         files: {
           'dist/js/app.min.js': [
-            'src/js/debounce.js',
             'src/js/modal.js',
-            'src/js/scroll.js',
-            'src/js/nav.js'
+            'src/js/scroll.js'
           ]
         }
       }

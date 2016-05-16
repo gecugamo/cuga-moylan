@@ -46,9 +46,14 @@
 .nav__link {
 	display: block;
 	flex: 1;
-  color: $font-color-primary;
+    color: $font-color-primary;
+    font-size: 1.5rem;
 	text-decoration: none;
-  transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+
+    @media only screen and (min-width: $breakpoint-sm) {
+        font-size: 1.6rem;
+    }
 }
 
 .nav__link:not(:last-child) {
@@ -62,44 +67,18 @@
   text-decoration: none;
 }
 
-.nav__link::before {
-	font-family: 'FontAwesome';
+.nav__link--email::after {
+	content: 'Email';
 }
 
-.nav__link--email::before {
-	content: '\f003';
+.nav__link--github::after {
+	content: 'Github';
 }
 
-.nav__link--github::before {
-	content: '\f09b';
+.nav__link--codepen::after {
+	content: 'Codepen';
 }
 
-.nav__link--codepen::before {
-	content: '\f1cb';
-}
-
-.nav__link--linkedin::before {
-	content: '\f0e1';
-}
-
-@media only screen and (min-width: $breakpoint-sm) {
-	.nav__link::before {
-		margin-right: 10px;
-	}
-
-	.nav__link--email::after {
-		content: 'Email';
-	}
-
-	.nav__link--github::after {
-		content: 'Github';
-	}
-
-	.nav__link--codepen::after {
-		content: 'Codepen';
-	}
-
-	.nav__link--linkedin::after {
-		content: 'Linkedin';
-	}
+.nav__link--linkedin::after {
+	content: 'Linkedin';
 }

@@ -6,7 +6,7 @@
 				<a class="modal__close" href="#0"></a>
 		</header>
 		<div class="modal__body">
-				<img class="modal__img" src="img/lr_style_2.jpg" alt="Screenshot from lrstyle.com" />
+				<img class="modal__img" src="img/lr_style.jpg" alt="Screenshot from lrstyle.com" />
 				<table class="modal__info">
 						<tr>
 								<td class="modal__table-head">
@@ -29,8 +29,9 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">LR Style is a lifestyle blog, with topics including fashion, gift ideas, and home decorating tips.</p>
-				<a class="btn small" href="http://lrstyle.us" target="_blank">Visit Site</a>
+				<p class="modal__summary">LR Style is a lifestyle blog. Topics include fashion, gift ideas, and home decorating tips.</p>
+				<p class="modal__summary">This project was a custom WordPress theme with a blog and a few custom pages. One of my favorite features is the single post editor. I used Advanced Custom Fields' Flexible Content field to build an interface that allowed the author to style each post's layout uniquely.</p>
+				<a class="btn" href="http://lrstyle.us" target="_blank" rel="noopener noreferrer">Visit Site</a>
 		</div>
 	</div>
 </div>

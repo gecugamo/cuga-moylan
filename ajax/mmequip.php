@@ -6,7 +6,7 @@
 				<a class="modal__close" href="#0"></a>
 		</header>
 		<div class="modal__body">
-				<img class="modal__img" src="img/mmequip_2.jpg" alt="Screenshot from mmequip.com" />
+				<img class="modal__img" src="img/mmequip.jpg" alt="Screenshot from mmequip.com" />
 				<table class="modal__info">
 						<tr>
 								<td class="modal__table-head">
@@ -29,8 +29,9 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">M &amp; M Equipment supplies reconditioned industrial processing and packaging equipment.</p>
-				<a class="btn small" href="http://mmequip.com" target="_blank">Visit Site</a>
+				<p class="modal__summary">M &amp; M Equipment supplies reconditioned industrial processing and packaging equipment, and is based in Skokie.</p>
+				<p class="modal__summary">This project was a custom WordPress theme integrated with WooCommerce. One of my favorite features of the site was a cookie based request list.</p>
+				<a class="btn" href="http://mmequip.com" target="_blank" rel="noopener noreferrer">Visit Site</a>
 		</div>
 	</div>
 </div>

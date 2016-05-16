@@ -6,7 +6,7 @@
 				<a class="modal__close" href="#0"></a>
 		</header>
 		<div class="modal__body">
-				<img class="modal__img" src="img/acmweb_2.jpg" alt="Screenshot from acmweb.com" />
+				<img class="modal__img" src="img/acmweb.jpg" alt="Screenshot from acmweb.com" />
 				<table class="modal__info">
 						<tr>
 								<td class="modal__table-head">
@@ -29,8 +29,9 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">ACM Community Management provides high quality managament services for homeowners.</p>
-				<a class="btn small" href="http://acmweb.com" target="_blank">Visit Site</a>
+				<p class="modal__summary">ACM Community Management, based in Downers Grove, provides managament services for homeowners.</p>
+				<p class="modal__summary">This project was a custom WordPress theme with a blog and custom pages. The custom pages on this site were most fun to build. Some of the highlights were the home page, testimonials page, and FAQ page.</p>
+				<a class="btn" href="http://acmweb.com" target="_blank" rel="noopener noreferrer">Visit Site</a>
 		</div>
 	</div>
 </div>

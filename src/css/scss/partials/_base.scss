@@ -28,7 +28,12 @@ p {
 }
 
 body {
+    padding-bottom: 32px;
     background-color: #fff;
+
+	@media only screen and (min-width: $breakpoint-sm) {
+        padding-bottom: 47px;
+    }
 }
 
 h1,
@@ -78,13 +83,13 @@ p {
 }
 
 a {
-  color: $theme-primary;
+  color: $theme-secondary;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: lighten($theme-primary, 25%);
+  color: lighten($theme-secondary, 10%);
   outline: 0;
   text-decoration: underline;
 }
