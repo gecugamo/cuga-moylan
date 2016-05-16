@@ -6,7 +6,7 @@
 				<a class="modal__close" href="#0"></a>
 		</header>
 		<div class="modal__body">
-				<img class="modal__img" src="img/customledgers_2.jpg" alt="Screenshot from customledgers.com" />
+				<img class="modal__img" src="img/customledgers.jpg" alt="Screenshot from customledgers.com" />
 				<table class="modal__info">
 						<tr>
 								<td class="modal__table-head">
@@ -28,8 +28,8 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">Ledgers, Inc. provides accounting services for small businesses.</p>
-				<a class="btn small" href="http://staging.customledgers.com" target="_blank">Visit Site</a>
+				<p class="modal__summary">Ledgers, Inc. is based in Glenview, and provides customized accounting services for small businesses.</p>
+				<p class="modal__summary">This project is a custom one page site. The goal of the design is to keep it simple, professional, and modern. It is both fun and challenging to design a site from scratch. The site is still a work in progress, and is planned to launch in the next few months.</p>
 		</div>
 	</div>
 </div>

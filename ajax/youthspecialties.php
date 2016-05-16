@@ -6,7 +6,7 @@
 				<a class="modal__close" href="#0"></a>
 		</header>
 		<div class="modal__body">
-				<img class="modal__img" src="img/youthspecialties_2.jpg" alt="Screenshot from youthspecialties.com" />
+				<img class="modal__img" src="img/youthspecialties.jpg" alt="Screenshot from youthspecialties.com" />
 				<table class="modal__info">
 						<tr>
 								<td class="modal__table-head">
@@ -29,8 +29,9 @@
 								</td>
 						</tr>
 				</table>
-				<p class="modal__summary">Youth Specialties provides youth ministry training and resources to churches.</p>
-				<a class="btn small" href="http://youthspecialties.com" target="_blank">Visit Site</a>
+				<p class="modal__summary">Youth Specialties is headquartered in Minneapolis, and provides youth ministry training and resources to churches.</p>
+				<p class="modal__summary">This project was a custom WordPress theme with a blog, custom pages, and a custom dashboard. It was awesome seeing this large project come together.</p>
+				<a class="btn" href="http://youthspecialties.com" target="_blank" rel="noopener noreferrer">Visit Site</a>
 		</div>
 	</div>
 </div>

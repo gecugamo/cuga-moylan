@@ -1,20 +1,15 @@
 /*
  * Scroll
  *****************************************************************************************************************************/
-.scroll {
+.scroll,
+.scroll:hover,
+.scroll:focus {
     display: inline-block;
     position: relative;
     width: 35px;
     height: 35px;
     color: #fff;
-    background-color: #000;
     font-size: 2rem;
     animation: up-down 2.5s ease-in-out infinite;
     transition: all 250ms ease-in-out;
-}
-
-.scroll:hover,
-.scroll:focus {
-    color: #fff;
-    background-color: #000;
 }
