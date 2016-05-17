@@ -24,6 +24,35 @@
         <h4 class="section-title">Work</h4>
         <div class="row">
             <div class="column">
+                <a class="project" href="codepuns">
+                        <img class="project__img" src="img/codepuns.jpg" alt="Screenshot from codepuns.cuga-moylan.com" />
+                    <span class="project__body">
+                        <h4 class="project__name">codepuns.cuga-moylan.com</h4>
+                        <table class="project__info">
+                            <tr>
+                                <td class="project__table-head">
+                                    Team:
+                                </td>
+                                <td>
+                                    Personal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="project__table-head">
+                                    Work:
+                                </td>
+                                <td>
+                                    <i class="icon-html5"></i>
+                                    <i class="icon-css3"></i>
+                                    <i class="icon-jquery"></i>
+                                    <i class="icon-mobile"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </span>
+                </a>
+            </div><!-- /.column -->
+            <div class="column">
                 <a class="project" href="lrstyle">
                         <img class="project__img" src="img/lr_style.jpg" alt="Screenshot from lrstyle.com" />
                     <span class="project__body">

@@ -1,4 +1,4 @@
-<!-- acmweb modal content -->
+<!-- metrocre modal content -->
 <div id="modal__metrocre" class="modal__content">
 	<div class="modal">
 		<header class="modal__header">
@@ -33,4 +33,4 @@
 		</div>
 	</div>
 </div>
-<!-- acmweb modal content -->
+<!-- metrocre modal content -->
