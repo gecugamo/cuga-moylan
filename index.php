@@ -4,7 +4,7 @@
     <div class="hero__content">
         <h1 class="hero__name">gary cuga-moylan</h1>
         <p class="hero__title">Web Developer</p>
-        <a class="scroll" href="#0" data-scroll="#work"><i class="icon-angle-double-down"></i></a>
+        <a class="scroll" href="#0" data-scroll="#about"><i class="icon-angle-double-down"></i></a>
     </div>
 </header>
 

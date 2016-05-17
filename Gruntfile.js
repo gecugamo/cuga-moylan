@@ -57,6 +57,15 @@ module.exports = function(grunt) {
           }
       }
     },
+    criticalcss: {
+        custom: {
+            options: {
+                url: 'http://localhost:3000/',
+                filename: 'dist/css/app.min.css',
+                outputfile: 'dist/css/crit.css'
+            }
+        }
+    },
     watch: {
       grunt: {
         options: {
@@ -71,7 +80,8 @@ module.exports = function(grunt) {
         ],
         tasks: [
           'sass',
-          'postcss'
+          'postcss',
+          'criticalcss'
         ]
       },
       js: {
@@ -88,6 +98,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-criticalcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('default', ['browserSync', 'watch']);
 }

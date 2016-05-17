@@ -2,6 +2,11 @@
  * Modal
  *****************************************************************************************************************************/
 
+// Prevent body scrolling
+ .modal-open {
+	 overflow: hidden;
+ }
+
 .modal__overlay {
 	display: none;
 	position: fixed;
@@ -18,13 +23,13 @@
 .modal {
 	position: relative;
 	z-index: 200;
-	max-width: 500px;
-	margin: 15px auto;
+	max-width: 550px;
+	margin: 15px auto 47px;
 	background-color: #fff;
 
-	@media only screen and (min-width: $breakpoint-md) {
+	@media only screen and (min-width: $breakpoint-sm) {
 		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-bottom: 77px;
 	}
 }
 

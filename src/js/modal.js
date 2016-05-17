@@ -4,6 +4,7 @@
 
     $('body').on('click', '.project', function(e) {
         e.preventDefault();
+        $('body').addClass('modal-open');
         modal.open($(this));
     });
 
@@ -22,10 +23,12 @@
     var modal = {
         open: function($this) {
             $.get('ajax/' + $this.attr('href') + '.php', function( data ) {
+                $('body').addClass('modal-open');
                 $('.modal__overlay').append( data ).show();
             });
         },
         close: function() {
+            $('body').removeClass('modal-open');
             $('.modal__overlay').hide().empty();
         }
     };
