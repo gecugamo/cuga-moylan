@@ -14,7 +14,7 @@
     <!-- About -->
     <section id="about" class="layout">
         <h4 class="section-title">About</h4>
-        <p class="section-intro">I am a self-taught web developer from Chicago. Currently, I work as a front-end developer <a href="https://www.enova.com/" target="_blank" rel="">Enova</a>. I'd consider myself primarily a WordPress developer, width="300" height="200" although I'm learning new things all the time. When I'm not coding, I like to spend time with my wife, Leigh.</p>
+        <p class="section-intro">I am a self-taught web developer from Chicago. Currently, I work as a front-end developer at <a href="https://www.enova.com/" target="_blank" rel="">Enova</a>. I'd consider myself primarily a WordPress developer, although I'm learning new things all the time. When I'm not coding, I like to spend time with my wife, Leigh.</p>
         <p class="section-intro">I love meeting new people. Send me an email, and we'll chat.</p>
     </section><!-- /.layout -->
 	<!-- /About -->
