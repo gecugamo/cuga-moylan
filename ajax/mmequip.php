@@ -6,7 +6,7 @@
 				<a class="modal__close" href="#0"></a>
 		</header>
 		<div class="modal__body">
-				<img class="modal__img" src="img/mmequip.jpg" alt="Screenshot from mmequip.com" />
+				<img class="modal__img" src="img/mmequip.jpg" width="300" height="200" alt="Screenshot from mmequip.com" />
 				<table class="modal__info">
 						<tr>
 								<td class="modal__table-head">
