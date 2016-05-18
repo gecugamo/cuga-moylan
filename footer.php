@@ -22,6 +22,7 @@
         </div>
         <!-- /.modal__overlay -->
 
+        <link rel="stylesheet" type="text/css" href="dist/css/app.min.css">
         <!-- Google Analytics -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -31,10 +32,10 @@
 
           ga('create', 'UA-73376786-1', 'auto');
           ga('send', 'pageview');
-
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="dist/js/app.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="dist/css/app.min.css">
+        <script>
+            !function(a){"use strict";a("body").on("click",".project",function(c){c.preventDefault(),a("body").addClass("modal-open"),b.open(a(this))}),a("body").on("click",".modal__close",function(a){a.preventDefault(),b.close()}),a(document).on("keyup",function(a){27!=a.keyCode&&32!=a.keyCode||b.close()});var b={open:function(b){a.get("ajax/"+b.attr("href")+".php",function(b){a("body").addClass("modal-open"),a(".modal__overlay").append(b).show()})},close:function(){a("body").removeClass("modal-open"),a(".modal__overlay").hide().empty()}}}(jQuery),function(a){"use strict";a("[data-scroll]").on("click",function(b){b.preventDefault();var c=a(a(this).attr("data-scroll")),d=c.offset().top;a("html, body").animate({scrollTop:d+"px"},300)})}(jQuery);
+        </script>
     </body>
 </html>
