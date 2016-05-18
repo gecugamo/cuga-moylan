@@ -18,9 +18,6 @@
 .nav__link {
 	display: block;
     width: 25%;
-    width: calc(25% - 10px);
-    margin-right: 5px;
-    margin-left: 5px;
     padding: 5px;
 	float: left;
     color: $font-color-primary;
@@ -28,19 +25,6 @@
 	text-decoration: none;
     text-align: center;
     transition: all 250ms ease-in-out;
-
-    &:first-child,
-    &:last-child {
-        width: calc(25% - 5px);
-    }
-
-    &:first-child {
-        margin-left: 0;
-    }
-
-    &:last-child {
-        margin-right: 0;
-    }
 
     @media only screen and (min-width: $breakpoint-sm) {
         padding: 10px;
