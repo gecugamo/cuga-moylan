@@ -14,7 +14,7 @@
     <!-- About -->
     <section id="about" class="layout">
         <h4 class="section-title">About</h4>
-        <p class="section-intro">I am a self-taught web developer from Chicago. Currently, I work as a front-end developer <a href="https://www.enova.com/" target="_blank" rel="">Enova</a>. I'd consider myself primarily a WordPress developer, although I'm learning new things all the time. When I'm not coding, I like to spend time with my wife, Leigh.</p>
+        <p class="section-intro">I am a self-taught web developer from Chicago. Currently, I work as a front-end developer <a href="https://www.enova.com/" target="_blank" rel="">Enova</a>. I'd consider myself primarily a WordPress developer, width="300" height="200" although I'm learning new things all the time. When I'm not coding, I like to spend time with my wife, Leigh.</p>
         <p class="section-intro">I love meeting new people. Send me an email, and we'll chat.</p>
     </section><!-- /.layout -->
 	<!-- /About -->
@@ -25,7 +25,7 @@
         <div class="row">
             <div class="column">
                 <a class="project" href="codepuns">
-                        <img class="project__img" src="img/codepuns.jpg" alt="Screenshot from codepuns.cuga-moylan.com" />
+                        <img class="project__img" src="img/codepuns.jpg" width="300" height="200" alt="Screenshot from codepuns.cuga-moylan.com" />
                     <span class="project__body">
                         <h4 class="project__name">codepuns.cuga-moylan.com</h4>
                         <table class="project__info">
@@ -54,7 +54,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="lrstyle">
-                        <img class="project__img" src="img/lr_style.jpg" alt="Screenshot from lrstyle.com" />
+                        <img class="project__img" src="img/lr_style.jpg" width="300" height="200" alt="Screenshot from lrstyle.com" />
                     <span class="project__body">
                         <h4 class="project__name">lrstyle.com</h4>
                         <table class="project__info">
@@ -84,7 +84,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="metrocre">
-                    <img class="project__img" src="img/metrocre.jpg" alt="Screenshot from metrocre.com" />
+                    <img class="project__img" src="img/metrocre.jpg" width="300" height="200" alt="Screenshot from metrocre.com" />
                     <span class="project__body">
                         <h4 class="project__name">metrocre.com</h4>
                         <table class="project__info">
@@ -111,7 +111,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="customledgers">
-                        <img class="project__img" src="img/customledgers.jpg" alt="Screenshot from customledgers.com" />
+                        <img class="project__img" src="img/customledgers.jpg" width="300" height="200" alt="Screenshot from customledgers.com" />
                     <span class="project__body">
                         <h4 class="project__name">customledgers.com</h4>
                         <table class="project__info">
@@ -140,7 +140,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="mmequip">
-                        <img class="project__img" src="img/mmequip.jpg" alt="Screenshot from mmequip.com" />
+                        <img class="project__img" src="img/mmequip.jpg" width="300" height="200" alt="Screenshot from mmequip.com" />
                     <span class="project__body">
                         <h4 class="project__name">mmequip.com</h4>
                         <table class="project__info">
@@ -170,7 +170,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="youthspecialties">
-                        <img class="project__img" src="img/youthspecialties.jpg" alt="Screenshot from youthspecialties.com" />
+                        <img class="project__img" src="img/youthspecialties.jpg" width="300" height="200" alt="Screenshot from youthspecialties.com" />
                     <span class="project__body">
                         <h4 class="project__name">youthspecialties.com</h4>
                         <table class="project__info">
@@ -200,7 +200,7 @@
             </div><!-- /.column -->
             <div class="column">
                 <a class="project" href="acmweb">
-                        <img class="project__img" src="img/acmweb.jpg" alt="Screenshot from acmweb.com" />
+                        <img class="project__img" src="img/acmweb.jpg" width="300" height="200" alt="Screenshot from acmweb.com" />
                     <span class="project__body">
                         <h4 class="project__name">acmweb.com</h4>
                         <table class="project__info">

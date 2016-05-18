@@ -6,7 +6,7 @@
 				<a class="modal__close" href="#0"></a>
 		</header>
 		<div class="modal__body">
-				<img class="modal__img" src="img/customledgers.jpg" alt="Screenshot from customledgers.com" />
+				<img class="modal__img" src="img/customledgers.jpg" width="300" height="200" alt="Screenshot from customledgers.com" />
 				<table class="modal__info">
 						<tr>
 								<td class="modal__table-head">
